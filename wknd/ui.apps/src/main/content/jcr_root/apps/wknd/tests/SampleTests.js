@@ -13,7 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-new hobs.TestSuite("WKND Sites Tests", {path:"/apps/wknd/tests/SampleTests.js", register: true})
+new hobs.TestSuite("WKND Sites Project Tests", {path:"/apps/wknd/tests/SampleTests.js", register: true})
 
     .addTestCase(new hobs.TestCase("Hello World component on english page")
         .navigateTo("/content/wknd/en.html")

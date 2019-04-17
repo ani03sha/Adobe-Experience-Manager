@@ -94,6 +94,11 @@
 							<artifactId>core.wcm.components.all</artifactId>
 							<filter>true</filter>
 						</subPackage>
+						<subPackage>
+							<groupId>com.adobe.cq</groupId>
+							<artifactId>core.wcm.components.extension</artifactId>
+							<filter>true</filter>
+						</subPackage>
 					</subPackages>
 				</configuration>
 			</plugin>
@@ -150,6 +155,11 @@
 		<dependency>
 			<groupId>com.day.cq.wcm</groupId>
 			<artifactId>cq-wcm-taglib</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.cq</groupId>
+			<artifactId>core.wcm.components.extension</artifactId>
+			<type>zip</type>
 		</dependency>
 	</dependencies>
 </project>
