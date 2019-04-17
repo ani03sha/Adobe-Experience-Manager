@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2019-04-17T04:09:58.498+05:30"
+        cq:lastModified="{Date}2019-04-17T09:04:02.546+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/wknd/settings/wcm/templates/article-page-template"
         jcr:primaryType="cq:PageContent"
@@ -25,14 +25,41 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wknd/components/content/breadcrumb"/>
-                <image_1185100734
-                    jcr:created="{Date}2019-04-17T04:09:48.998+05:30"
+                <text
+                    jcr:created="{Date}2019-04-17T08:19:10.518+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2019-04-17T04:09:48.998+05:30"
+                    jcr:lastModified="{Date}2019-04-17T09:03:48.753+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="wknd/components/content/image"
-                    fileReference="/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/camp-tent.jpg"/>
+                    sling:resourceType="wknd/components/content/text"
+                    text="&lt;p>Sample Text One&lt;/p>&#xa;"
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="7"
+                            width="5"/>
+                        <phone
+                            jcr:primaryType="nt:unstructured"
+                            width="5"/>
+                    </cq:responsive>
+                </text>
+                <text_527855185
+                    jcr:created="{Date}2019-04-17T08:59:26.739+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-04-17T09:04:02.541+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/content/text"
+                    text="&lt;p>Sample Text Two&lt;/p>&#xa;"
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="5"
+                            width="4"/>
+                    </cq:responsive>
+                </text_527855185>
             </responsivegrid>
         </root>
     </jcr:content>
