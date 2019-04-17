@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2019-04-17T09:04:02.546+05:30"
+        cq:lastModified="{Date}2019-04-17T09:35:57.719+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/wknd/settings/wcm/templates/article-page-template"
         jcr:primaryType="cq:PageContent"
@@ -26,40 +26,77 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wknd/components/content/breadcrumb"/>
                 <text
-                    jcr:created="{Date}2019-04-17T08:19:10.518+05:30"
+                    jcr:created="{Date}2019-04-17T09:26:40.649+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2019-04-17T09:03:48.753+05:30"
+                    jcr:lastModified="{Date}2019-04-17T09:35:57.709+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wknd/components/content/text"
-                    text="&lt;p>Sample Text One&lt;/p>&#xa;"
+                    text="&lt;h4>&lt;span style=&quot;font-weight: normal;&quot;>Discovery Sprouts&amp;nbsp;is all about encouraging families to share adventures together in the great outdoors. It is a hands-on, wellies-on experience with story-telling, nature crafts and imaginary play held in beautiful woodland. But why? Why is it so important to be sharing this time outside together with your children?&lt;/span>&lt;/h4>&#xd;&#xa;&lt;p>We all know we’re living in a world where our children are faced with constant stimulation and instant gratification with too much screen time, all-singing, all-dancing gadgets and lots of pressure to perform.&amp;nbsp; This is having dramatic results on our children’s physical and mental wellbeing, yet the solution is so simple – play together outdoors. Yes, it really is that easy, but what is it about playing outside that helps children to blossom into healthy, happy, resilient and confident young people?&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>First of all, play is essential to children. It’s how they learn, how they find their place in the world and how they discover who they are. Take that playing outside and it gives children an enormous amount of freedom. Freedom to get dirty, to run, to let their imaginations run wild, to jump in puddles, to squelch in mud, to climb, to run and to shout as loud as they can! I’m pretty sure we can all admit that we don’t really like that happening inside our houses?&lt;/p>&#xd;&#xa;&lt;h2>&lt;i>So take them outside and let that exuberance, that raucous behaviour, that pure joy, all those things that characterise childhood, be expressed.&amp;nbsp;&lt;/i>&lt;/h2>&#xd;&#xa;&lt;p>I can’t continue without mentioning mud! Dirt doesn’t hurt. In fact, quite the opposite. We live in a sterilised world where we disinfect everything our babies come into contact with, but there is still a rise in the prevalence of allergies and asthma. Now, I’m not suggesting anyone actually gives those mud pies a lick but rather that regular exposure to mud can do your immune system the world of good. Playing with mud is also also a fantastic sensory experience which is how young children naturally learn. If your child is engaged and motivated by an activity, then you can be certain that it is providing them with a fantastic learning opportunity. Best of all, scientists are suggesting that exposure to friendly-bacteria in mud releases serotonin in the brain which can help reduce a child’s vulnerability to depression. With an alarming rise in the number of children and young people affected by mental health problems, this has to be something to consider.&lt;/p>&#xd;&#xa;&lt;p>As an increasingly risk-averse society especially where our children are concerned, risky play can be a prickly subject. However, play with an element of risk, the thrill of something a little dangerous, is how children learn to challenge themselves and test their own abilities. Playing outdoors gives endless opportunities for this. Climbing trees, jumping off logs, balancing on tree trunks, swinging on branches – these are all ways that children explore what their bodies are capable off and what their own boundaries are. Activities don’t have to be adrenaline fuelled or knee-quivering to be considered risky, and our children, just like us, will discover their own very clear limits when they are given the space to experiment.&lt;/p>&#xd;&#xa;"
                     textIsRich="true">
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"
-                            offset="7"
-                            width="5"/>
-                        <phone
-                            jcr:primaryType="nt:unstructured"
-                            width="5"/>
+                            width="6"/>
                     </cq:responsive>
                 </text>
-                <text_527855185
-                    jcr:created="{Date}2019-04-17T08:59:26.739+05:30"
+                <text_461966900
+                    jcr:created="{Date}2019-04-17T09:27:04.018+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2019-04-17T09:04:02.541+05:30"
+                    jcr:lastModified="{Date}2019-04-17T09:30:45.166+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wknd/components/content/text"
-                    text="&lt;p>Sample Text Two&lt;/p>&#xa;"
+                    text="&lt;p>Today my cousin has reminded me of Spain, as I spent two marvelous weeks in a small town called Les Roquetes situated on the Mediterranean coast, close to Vilanova I la Geltru, Sitges and, of course Barcelona. Why did I choose to speak about Sitges from these four locations? Because the town has an amazing contrast created by the landscape, buildings, people and history.&lt;br>&#xd;&#xa;To be fair, till last year I had never heard of this pearl of Costa Brava. In the past, Sitges was an important fishing village of the area, but thousands of young men in search of new jobs left the town to build their future in the West Indies, choosing the cotton, rom and tobacco instead of fishing or the wine industry, as the phylloxera plague destroyed it. Today you may hear “Indianos’” or “Americanos” among Spanish people, these being the names for those who returned in the natal town with a fortune which they used to build the “American” houses that populate the urban center of Sitges. The old town that now hosts restaurants, locals and brand shops has a Catalan architecture. The parish church of Sitges is the one which dominates the skyline and the architectural heritage of the town.&lt;br>&#xd;&#xa;The golden beaches, seaside promenades, clear waters, pleasant houses and narrow streets, as well as the varied cultural life of this “small Ibiza”… everything has become a desired destination.&lt;br>&#xd;&#xa;Sitges has a busy festival calendar; it is said that it is the busiest in all Spain. Every month, Sitges hosts a fiesta and everyone from there knows how to party. In the summertime every day looks as a day off, meaning the streets, the beaches and the bars are full and the night clubbing is really all night long. You may find all kind of styles, salsa, bachata, rock, house music; you just have to look around. Also, during the summer, the Gay Beach Party is one of the highlights of the week-end. I must be fair and tell you I didn’t attend the party, but during my promenade I realized I had never seen so many handsome men on a square meter. Pity they were all gay. Sad, isn’t it ladies? They aren’t aggressive in their lust. I must say I did not stare at them and my sight wasn’t perturbed by their kisses. I just admired their looks, as they were well shaped and dressed as they were just taken out from the present box.&lt;br>&#xd;&#xa;Besides the Gay Carnival, which is in spring time, Sitges hosts The International Film Festival and becomes a mini Cannes in the autumn for ten days, bringing together the Hollywood actors and embracing a wide range of genres. As NY is called the city that never sleeps you may call Sitges the town where in the summer months you can feel the weekend vibe daily. It is a town where you never get tired or bored. Even more, you’ll enjoy every night as it would be the last one in Sitges.&lt;br>&#xd;&#xa;To prove my words you may check the program of events for Sitges at&amp;nbsp;&lt;a href=&quot;http://www.staysitges.com/events.php&quot;>http://www.staysitges.com/events.php&lt;/a>. They also say “Sitges is blessed with a climate that means the sun shines throughout the year, it is the jewel in the Spanish crown and Sitges has something for every taste. From the exciting outrageous Mardi Gras Carnival, tango festivals, extravagant firework displays to parties on the beach…. there is never a shortage of something to do! We have listed the key events below on a month by month basis, but there are many, many more events too numerous to list”. Looks like they definitely can guarantee the fun.&lt;/p>&#xd;&#xa;"
                     textIsRich="true">
                     <cq:responsive jcr:primaryType="nt:unstructured">
                         <default
                             jcr:primaryType="nt:unstructured"
-                            offset="5"
+                            width="6"/>
+                    </cq:responsive>
+                </text_461966900>
+                <image
+                    jcr:created="{Date}2019-04-17T09:34:00.140+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-04-17T09:34:19.530+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/content/image"
+                    fileReference="/content/dam/wknd/en/los-angeles/robson-hatsukami-morgan-280159.jpg">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
                             width="4"/>
                     </cq:responsive>
-                </text_527855185>
+                </image>
+                <image_249051039
+                    jcr:created="{Date}2019-04-17T09:34:06.402+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-04-17T09:34:30.181+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/content/image"
+                    fileReference="/content/dam/wknd/en/los-angeles/skateboard-hero.jpg">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            width="4"/>
+                    </cq:responsive>
+                </image_249051039>
+                <image_1842727680
+                    jcr:created="{Date}2019-04-17T09:34:37.713+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-04-17T09:34:37.713+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/content/image"
+                    fileReference="/content/dam/wknd/en/los-angeles/roi-dimor-388002.jpg">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            width="4"/>
+                    </cq:responsive>
+                </image_1842727680>
             </responsivegrid>
         </root>
     </jcr:content>

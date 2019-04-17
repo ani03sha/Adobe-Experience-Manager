@@ -1,66 +1,69 @@
-/* WKND Header - default.less */
+/*
+ *
+ * Global Styles
+ */
+ 
+ body {
+    background-color: @body-bg;
+    font-family: @font-family-base;
+    margin: 0;
+    padding: 0;
+    font-size: @font-size-base;
+    text-align: left;
+    color: @text-color;
+    line-height: @line-height-base;
 
-.wknd-header {
-	z-index: 1030;
-	position: fixed;
-	top: 0;
-	height:92px;
-	padding-top: 45px;
-	left:0;
-	right:0;
-	
-	.container {
-		.container-content();
-		max-width: 1116px;
-	}
-	
-	 @media (max-width: @screen-medium) {
-	 	padding: 12px;
-    	top: 0;
-    	left: 0;
-    	right: 0;
-		height: 60px;
-		position: absolute;
-	}
-	
-	a.wknd-header-logo {
-		color: @text-color;
-	    font-weight: bolder;
-	    font-size: @font-size-xlarge;
-	    float:left;
-	    padding: 11px 12px;
-	    line-height: 28px;
-		height: 50px;
-		margin:0;
-		padding-left: 0;
-	    text-decoration: none;
-		text-align: left;
-
-		@media (max-width: @screen-medium) {
-	 		font-size: (@font-size-large + 8px);
-			margin-left: 0;
-			padding-top: 10px;
-			padding-left: @gutter-padding;
-	 	}
-	}	
-	
-	h1 {
-		float: left;
-	    margin-top: 0.25em;
-	    font-size: 1.5em;
-	}
+    .root {
+        padding-top:160px;
+        @media (max-width: @screen-medium) {
+            padding-top:60px;     
+        }
+    }
 }
 
-.scrolly {
-	.wknd-header {
-		
 
-		@media (min-width: (@screen-medium + 1)) {
-			height: 80px;
-			background-color: @body-bg;
-			-webkit-box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.26);
-			-moz-box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.26);
-			box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.26);
-		}
-	}
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: @font-family-base;
+  font-weight: @font-weight-semi-bold;
+  line-height: @line-height-base;
+  color: @text-color;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: @line-height-computed;
+  margin-bottom: (@line-height-computed / 2);
+}
+
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: (@line-height-computed / 2);
+  margin-bottom: (@line-height-computed / 2);
+
+}
+
+h1, .h1 { font-size: @font-size-h1; }
+h2, .h2 { font-size: @font-size-h2; }
+h3, .h3 { font-size: @font-size-h3; }
+h4, .h4 { font-size: @font-size-h4; }
+h5, .h5 { font-size: @font-size-h5; }
+h6, .h6 { font-size: @font-size-h6; }
+
+a {
+    color: @link-color;
+    text-decoration: none;
+}
+
+// Body text
+// -------------------------
+
+p {
+  margin: 0 0 (@line-height-computed / 2);
 }

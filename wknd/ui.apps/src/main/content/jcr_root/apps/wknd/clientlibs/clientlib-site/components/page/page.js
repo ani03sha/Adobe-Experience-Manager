@@ -1,3 +1,5 @@
+/* JS Snippet to trigger class change on page scroll */
+
 (function (element, $) {
     'use strict';
     var target = $(element),
