@@ -9,12 +9,12 @@
         cq:parentPath="/content/dam/wknd/en/los-angeles"
         dam:assetState="processed"
         dam:relativePath="wknd/en/los-angeles/robson-hatsukami-morgan-280159.jpg"
-        jcr:lastModified="{Date}2018-11-01T21:13:55.509-04:00"
+        jcr:lastModified="{Date}2019-04-17T09:02:40.360+05:30"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
             dam:Bitsperpixel="{Long}24"
-            dam:extracted="{Date}2018-04-06T09:12:36.345-04:00"
+            dam:extracted="{Date}2019-04-17T09:02:36.968+05:30"
             dam:Fileformat="JPEG"
             dam:MIMEtype="image/jpeg"
             dam:Numberofimages="{Long}1"
@@ -24,11 +24,11 @@
             dam:Physicalwidthindpi="{Long}72"
             dam:Physicalwidthininches="{Decimal}49.27777862548828"
             dam:Progressive="no"
-            dam:sha1="85c7bd1940f80cc0727e9456675643e3d8881462"
+            dam:sha1="9b125adfb26a5056c96582f51623bbc0770e059c"
             dam:size="{Long}929028"
             dc:format="image/jpeg"
             dc:modified="{Date}2018-02-04T13:44:40.049-05:00"
-            jcr:lastModified="{Date}2018-11-01T21:13:54.798-04:00"
+            jcr:lastModified="{Date}2019-04-17T09:02:32.072+05:30"
             jcr:lastModifiedBy="admin"
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"
@@ -36,13 +36,13 @@
             tiff:ImageWidth="{Long}3548"/>
         <related jcr:primaryType="nt:unstructured"/>
         <usages
-            dam:score="{Long}2"
+            dam:score="{Long}4"
             jcr:primaryType="nt:unstructured"
             usedBy="[aem]">
             <aem
                 jcr:primaryType="nt:unstructured"
-                count="{Long}2"
-                lastUsed="{Date}2018-04-06T09:14:40.279-04:00"/>
+                count="{Long}4"
+                lastUsed="{Date}2019-04-17T09:46:35.028+05:30"/>
         </usages>
     </jcr:content>
 </jcr:root>
