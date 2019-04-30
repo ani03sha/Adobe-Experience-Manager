@@ -134,5 +134,10 @@
             <groupId>uk.org.lidalia</groupId>
             <artifactId>slf4j-test</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.adobe.aem</groupId>
+            <artifactId>uber-jar</artifactId>
+            <classifier>apis</classifier>
+        </dependency>
     </dependencies>
 </project>
