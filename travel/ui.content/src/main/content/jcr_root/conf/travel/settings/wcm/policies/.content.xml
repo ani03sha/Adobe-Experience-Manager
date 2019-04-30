@@ -2,17 +2,18 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
-    <rep:policy/>
     <wcm jcr:primaryType="nt:unstructured">
         <foundation jcr:primaryType="nt:unstructured">
             <components jcr:primaryType="nt:unstructured">
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <content-default
                         jcr:description="Policy for editable layout containers"
+                        jcr:lastModified="{Date}2019-05-01T03:52:54.077+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="travel Default"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[group:travel,/apps/travel/components/form/container]"
+                        components="[/libs/wcm/foundation/components/responsivegrid,group:Travel,/apps/travel/components/form/container]"
                         policyResourceType="wcm/foundation/components/responsivegrid">
                         <cq:authoring jcr:primaryType="nt:unstructured">
                             <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -29,6 +30,15 @@
                             jcr:primaryType="nt:unstructured"
                             mergeList="{Boolean}true"/>
                     </content-default>
+                    <policy_1239363291040873
+                        jcr:lastModified="{Date}2019-05-01T03:55:27.621+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Layout Policy One"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="group:Travel">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1239363291040873>
                 </responsivegrid>
             </components>
         </foundation>
