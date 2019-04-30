@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/travel"/>
+    <filter root="/content/travel"/>
+    <filter root="/content/dam/travel"/>
+</workspaceFilter>
