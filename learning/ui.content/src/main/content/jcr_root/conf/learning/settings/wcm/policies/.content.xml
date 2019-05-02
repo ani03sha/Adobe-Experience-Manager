@@ -2,50 +2,67 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
-    <rep:policy/>
     <wcm jcr:primaryType="nt:unstructured">
         <foundation jcr:primaryType="nt:unstructured">
             <components jcr:primaryType="nt:unstructured">
                 <responsivegrid jcr:primaryType="nt:unstructured">
-                    <content-default
-                        jcr:description="Policy for editable layout containers"
+                    <policy_1556718649861
+                        jcr:lastModified="{Date}2019-05-01T20:23:33.431+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="learning Default"
+                        jcr:title="Parallax Policy"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[group:[A[Blearning,/apps/learning/components/form/container]"
-                        policyResourceType="wcm/foundation/components/responsivegrid">
-                        <cq:authoring jcr:primaryType="nt:unstructured">
-                            <assetToComponentMapping jcr:primaryType="nt:unstructured">
-                                <image
-                                    jcr:primaryType="nt:unstructured"
-                                    assetGroup="media"
-                                    assetMimetype="image/*"
-                                    droptarget="image"
-                                    resourceType="learning/components/content/image"
-                                    type="Images"/>
-                            </assetToComponentMapping>
-                        </cq:authoring>
-                        <jcr:content
-                            jcr:primaryType="nt:unstructured"
-                            mergeList="{Boolean}true"/>
-                    </content-default>
+                        components="[/libs/wcm/foundation/components/responsivegrid,group:Learning]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1556718649861>
+                    <policy_1295696248641111
+                        jcr:lastModified="{Date}2019-05-01T20:24:01.882+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Parallax Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="group:Learning">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1295696248641111>
+                    <policy_1312337001514360
+                        jcr:lastModified="{Date}2019-05-02T00:10:35.292+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="One Default"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/wcm/foundation/components/responsivegrid,group:Learning]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1312337001514360>
+                    <policy_1312392329443862
+                        jcr:lastModified="{Date}2019-05-02T00:32:30.409+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Template One Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:General,group:Learning]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1312392329443862>
+                    <policy_1354505565048223
+                        jcr:lastModified="{Date}2019-05-02T11:52:58.836+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Fixed Sticky Header Default"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:General,group:Learning]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1354505565048223>
+                    <policy_1354571223015947
+                        jcr:lastModified="{Date}2019-05-02T11:54:01.932+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Fixed Sticky Header Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:General,group:Learning]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1354571223015947>
                 </responsivegrid>
             </components>
         </foundation>
     </wcm>
-    <learning jcr:primaryType="nt:unstructured">
-        <components jcr:primaryType="nt:unstructured">
-            <form jcr:primaryType="nt:unstructured">
-                <container jcr:primaryType="nt:unstructured">
-                    <form-container
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="learning Form"
-                        sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/apps/learning/components/form/button,/apps/learning/components/form/hidden,/apps/learning/components/form/options,/apps/learning/components/form/text]">
-                        <jcr:content jcr:primaryType="nt:unstructured"/>
-                    </form-container>
-                </container>
-            </form>
-        </components>
-    </learning>
+    <rep:policy/>
 </jcr:root>

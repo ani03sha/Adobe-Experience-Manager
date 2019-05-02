@@ -2,138 +2,33 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
-        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:template="/conf/learning/settings/wcm/templates/content-page"
+        cq:lastModified="{Date}2019-05-02T12:03:19.705+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/learning/settings/wcm/templates/fixed-sticky-header-template"
         jcr:primaryType="cq:PageContent"
-        jcr:title="English"
-        sling:resourceType="learning/components/structure/page"
-        pageTitle="New Project"
-        socialMedia="[facebook]">
+        jcr:title="Home"
+        sling:resourceType="learning/components/structure/page">
         <root
+            jcr:lastModified="{Date}2019-05-02T11:53:08.140+05:30"
+            jcr:lastModifiedBy="admin"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <responsivegrid
+                jcr:created="{Date}2019-05-02T11:53:21.352+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2019-05-02T11:53:25.441+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <title
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="What is Lorem Ipsum?"
-                    sling:resourceType="learning/components/content/title"/>
                 <text
+                    jcr:created="{Date}2019-05-02T12:02:51.457+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-05-02T12:03:19.703+05:30"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="learning/components/content/text"
-                    text="&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;br>&#xa;&lt;/p>&#xa;"
+                    sling:resourceType="foundation/components/text"
+                    text="&lt;p>Wolf vinyl hella, jean shorts disrupt skateboard master cleanse hashtag iPhone. Pop-up bicycle rights Brooklyn iPhone Helvetica kitsch Godard, XOXO blog aesthetic beard quinoa. Fixie kale chips PBR&amp;amp;B twee, YOLO raw denim before they sold out photo booth bespoke seitan food truck. Ethical chia before they sold out, trust fund viral ennui you probably haven't heard of them cred bitters mixtape semiotics deep v jean shorts pork belly occupy shabby chic sriracha ethnic normcore bicycle rights single-origin coffee slow-carb jean shorts. Twee ethnic mumblecore, Carles banh mi slow-carb pour-over organic. Ethical tofu narwhal, hoodie viral ennui tousled paleo. Butcher chia cray iPhone keytar, sustainable Cosby sweater literally try-hard put a bird on it photo booth ethical street art literally semiotics.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Wolf vinyl hella, jean shorts disrupt skateboard master cleanse hashtag iPhone. Pop-up bicycle rights Brooklyn iPhone Helvetica kitsch Godard, XOXO blog aesthetic beard quinoa. Fixie kale chips PBR&amp;amp;B twee, YOLO raw denim before they sold out photo booth bespoke seitan food truck. Ethical chia before they sold out, trust fund viral ennui you probably haven't heard of them cred bitters mixtape semiotics deep v jean shorts pork belly occupy shabby chic sriracha ethnic normcore bicycle rights single-origin coffee slow-carb jean shorts. Twee ethnic mumblecore, Carles banh mi slow-carb pour-over organic. Ethical tofu narwhal, hoodie viral ennui tousled paleo. Butcher chia cray iPhone keytar, sustainable Cosby sweater literally try-hard put a bird on it photo booth ethical street art literally semiotics.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Wolf vinyl hella, jean shorts disrupt skateboard master cleanse hashtag iPhone. Pop-up bicycle rights Brooklyn iPhone Helvetica kitsch Godard, XOXO blog aesthetic beard quinoa. Fixie kale chips PBR&amp;amp;B twee, YOLO raw denim before they sold out photo booth bespoke seitan food truck. Ethical chia before they sold out, trust fund viral ennui you probably haven't heard of them cred bitters mixtape semiotics deep v jean shorts pork belly occupy shabby chic sriracha ethnic normcore bicycle rights single-origin coffee slow-carb jean shorts. Twee ethnic mumblecore, Carles banh mi slow-carb pour-over organic. Ethical tofu narwhal, hoodie viral ennui tousled paleo. Butcher chia cray iPhone keytar, sustainable Cosby sweater literally try-hard put a bird on it photo booth ethical street art literally semiotics.&lt;/p>&#xd;&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xd;&#xa;&lt;p>Wolf vinyl hella, jean shorts disrupt skateboard master cleanse hashtag iPhone. Pop-up bicycle rights Brooklyn iPhone Helvetica kitsch Godard, XOXO blog aesthetic beard quinoa. Fixie kale chips PBR&amp;amp;B twee, YOLO raw denim before they sold out photo booth bespoke seitan food truck. Ethical chia before they sold out, trust fund viral ennui you probably haven't heard of them cred bitters mixtape semiotics deep v jean shorts pork belly occupy shabby chic sriracha ethnic normcore bicycle rights single-origin coffee slow-carb jean shorts. Twee ethnic mumblecore, Carles banh mi slow-carb pour-over organic. Ethical tofu narwhal, hoodie viral ennui tousled paleo. Butcher chia cray iPhone keytar, sustainable Cosby sweater literally try-hard put a bird on it photo booth ethical street art literally semiotics.&lt;/p>&#xd;&#xa;"
                     textIsRich="true"/>
-                <image
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="learning/components/content/image"
-                    fileReference="/content/dam/learning/asset.jpg"/>
-                <list
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="learning/components/content/list"
-                    childDepth="1"
-                    linkItems="true"
-                    listFrom="static"
-                    pages="[/content/learning/en,/content/learning/fr]"
-                    showDescription="false"
-                    showModificationDate="false"
-                    sortOrder="asc"
-                    tagsMatch="any"/>
-                <carousel
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="learning/components/content/carousel"
-                    autoplay="false"
-                    delay="5000">
-                    <image
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="learning/components/content/image"
-                        fileReference="/content/dam/learning/asset.jpg"/>
-                    <text
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="learning/components/content/text"
-                        text="&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xa;"
-                        textIsRich="true"/>
-                </carousel>
-                <tabs
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="learning/components/content/tabs">
-                    <item_1
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Tab 1"
-                        sling:resourceType="wcm/foundation/components/responsivegrid">
-                        <image
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="learning/components/content/image"
-                            fileReference="/content/dam/learning/asset.jpg"/>
-                    </item_1>
-                    <item_2
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Tab 2"
-                        sling:resourceType="wcm/foundation/components/responsivegrid">
-                        <text
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="learning/components/content/text"
-                            text="&lt;p>&lt;b>Lorem Ipsum&lt;/b>&amp;nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xa;"
-                            textIsRich="true"/>
-                    </item_2>
-                </tabs>
-                <teaser
-                    jcr:description="&lt;p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p>&#xd;&#xa;"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Lorem Ipsum"
-                    sling:resourceType="learning/components/content/teaser"
-                    actionsEnabled="false"
-                    descriptionFromPage="false"
-                    fileReference="/content/dam/learning/asset.jpg"
-                    textIsRich="true"
-                    titleFromPage="false"/>
-                <helloworld
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="learning/components/content/helloworld"/>
-                <container
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="learning/components/form/container"
-                    action="/content/usergenerated/learning/en/cq-gen1506071823762/"
-                    actionType="foundation/components/form/actions/store">
-                    <text
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Lorem"
-                        sling:resourceType="learning/components/form/text"
-                        name="lorem"
-                        rows="2"
-                        type="text"/>
-                    <options
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Where does it come from?"
-                        sling:resourceType="learning/components/form/options"
-                        name="come-from"
-                        source="local"
-                        type="checkbox">
-                        <items jcr:primaryType="nt:unstructured">
-                            <item0
-                                jcr:primaryType="nt:unstructured"
-                                selected="false"
-                                text="A"
-                                value="a"/>
-                            <item1
-                                jcr:primaryType="nt:unstructured"
-                                selected="false"
-                                text="B"
-                                value="b"/>
-                        </items>
-                    </options>
-                    <button
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="learning/components/form/button"/>
-                </container>
-                <sharing
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="learning/components/content/sharing"/>
             </responsivegrid>
         </root>
     </jcr:content>
