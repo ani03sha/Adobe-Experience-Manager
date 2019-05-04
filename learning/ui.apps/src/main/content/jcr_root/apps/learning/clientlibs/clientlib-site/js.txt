@@ -1,0 +1,5 @@
+#base=js/vendor/bootstrap
+bootstrap.js
+
+#base=js
+script.js

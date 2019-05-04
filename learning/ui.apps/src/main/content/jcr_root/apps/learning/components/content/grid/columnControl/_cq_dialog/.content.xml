@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    title="Column Control">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <basic
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Columns"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}false">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <desktop
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldDescription="Enter the no. of columns to be displayed on desktop"
+                                        fieldLabel="Desktop"
+                                        name="./desktopColumns"
+                                        text="Desktop">
+                                        <items jcr:primaryType="cq:WidgetCollection">
+                                            <one
+                                                jcr:primaryType="nt:unstructured"
+                                                text="1"
+                                                value="1"/>
+                                            <two
+                                                jcr:primaryType="nt:unstructured"
+                                                text="2"
+                                                value="2"/>
+                                            <three
+                                                jcr:primaryType="nt:unstructured"
+                                                text="3"
+                                                value="3"/>
+                                            <four
+                                                jcr:primaryType="nt:unstructured"
+                                                text="4"
+                                                value="4"/>
+                                            <five
+                                                jcr:primaryType="nt:unstructured"
+                                                text="5"
+                                                value="5"/>
+                                        </items>
+                                    </desktop>
+                                    <tablet
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldDescription="Enter the no. of columns to be displayed on tablet"
+                                        fieldLabel="Tablet"
+                                        name="./tabletColumns">
+                                        <items jcr:primaryType="cq:WidgetCollection">
+                                            <one
+                                                jcr:primaryType="nt:unstructured"
+                                                text="1"
+                                                value="1"/>
+                                            <two
+                                                jcr:primaryType="nt:unstructured"
+                                                text="2"
+                                                value="2"/>
+                                            <three
+                                                jcr:primaryType="nt:unstructured"
+                                                text="3"
+                                                value="3"/>
+                                            <four
+                                                jcr:primaryType="nt:unstructured"
+                                                text="4"
+                                                value="4"/>
+                                            <five
+                                                jcr:primaryType="nt:unstructured"
+                                                text="5"
+                                                value="5"/>
+                                        </items>
+                                    </tablet>
+                                </items>
+                            </column>
+                        </items>
+                    </basic>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
