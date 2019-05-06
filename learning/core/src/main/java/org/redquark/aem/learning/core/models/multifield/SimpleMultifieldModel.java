@@ -1,4 +1,4 @@
-package org.redquark.aem.learning.core.models;
+package org.redquark.aem.learning.core.models.multifield;
 
 import javax.inject.Inject;
 
