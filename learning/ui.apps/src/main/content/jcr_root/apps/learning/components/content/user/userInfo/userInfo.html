@@ -1,0 +1,22 @@
+<sly 
+	data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" 
+    data-sly-call="${clientLib.all @ categories='userInfo'}" data-sly-unwrap />
+
+<h1>User Information</h1>
+
+<div>
+	<form method="#">
+    	<table border="1" align="left">
+			<tr>
+				<td>
+					<textarea id="json" rows="15" columns="50"></textarea>
+                </td>
+            </tr>
+            <tr>
+				<td>
+					<input type="button" value="Get Information" name="submit" id="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
