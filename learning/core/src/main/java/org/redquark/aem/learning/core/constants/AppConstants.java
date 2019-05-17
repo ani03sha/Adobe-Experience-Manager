@@ -1,4 +1,4 @@
-package org.redquark.aem.bulkusercreation.core.constants;
+package org.redquark.aem.learning.core.constants;
 
 /**
  * This class stores the constant variables used in this project

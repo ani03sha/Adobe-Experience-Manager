@@ -1,8 +1,8 @@
 package org.redquark.aem.learning.core.services.impl;
 
-import static org.redquark.aem.bulkusercreation.core.constants.AppConstants.DEFAULT_GROUP;
-import static org.redquark.aem.bulkusercreation.core.constants.AppConstants.DEFAULT_PASSWORD;
-import static org.redquark.aem.bulkusercreation.core.constants.AppConstants.EMPTY_STRING;
+import static org.redquark.aem.learning.core.constants.AppConstants.DEFAULT_GROUP;
+import static org.redquark.aem.learning.core.constants.AppConstants.DEFAULT_PASSWORD;
+import static org.redquark.aem.learning.core.constants.AppConstants.EMPTY_STRING;
 
 import java.io.File;
 import java.io.IOException;

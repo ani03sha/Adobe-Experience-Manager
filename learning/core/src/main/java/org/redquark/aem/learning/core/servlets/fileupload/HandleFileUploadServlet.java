@@ -1,6 +1,6 @@
 package org.redquark.aem.learning.core.servlets.fileupload;
 
-import static org.redquark.aem.bulkusercreation.core.constants.AppConstants.EMPTY_STRING;
+import static org.redquark.aem.learning.core.constants.AppConstants.EMPTY_STRING;
 
 import java.io.File;
 import java.io.InputStream;
