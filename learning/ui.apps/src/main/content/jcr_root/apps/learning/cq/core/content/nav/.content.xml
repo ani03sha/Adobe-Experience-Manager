@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <tools jcr:primaryType="nt:unstructured">
+        <redquark
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Red Quark"
+            id="cq-tools-redquark">
+            <createUsers
+                jcr:description="Create users in bulk"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Bulk Users"
+                href="/apps/bulkusercreation/admin/ext/createusers/content/createusers.html"
+                icon="user"
+                id="granite-security-users-users"/>
+        </redquark>
+    </tools>
+</jcr:root>

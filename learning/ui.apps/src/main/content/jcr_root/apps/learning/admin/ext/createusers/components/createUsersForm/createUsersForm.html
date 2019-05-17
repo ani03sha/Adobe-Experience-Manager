@@ -1,0 +1,94 @@
+<style>
+.red-quark-create-users {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -250px;
+	width: 500px;
+	height: 200px;
+}
+
+.red-quark-create-users .file-upload {
+	border: 4px dashed gray;
+	margin-left: -12px;
+	margin-bottom: 16px;
+}
+  
+.red-quark-create-users .file-upload input[type="file"] {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	opacity: 0;
+	width: 500px;
+	height: 150px;
+	margin-left: -8px;
+	position: relative;
+}
+
+.red-quark-create-users .file-upload p {
+	position: absolute;
+	left: 50%;
+	top: 32%;
+	width: 80%;
+	margin-left: -40%;
+	text-align: center;
+	z-index: -1;
+}
+
+.red-quark-create-users input[type="submit"] {
+	margin: 0;
+	color: #fff;
+	background: #326ec8;
+	border: none;
+	width: 500px;
+	height: 35px;
+	margin-top: -20px;
+	margin-left: -8px;
+	border-radius: 4px;
+	transition: all .2s ease;
+	outline: none;
+}
+
+.red-quark-create-users button:hover {
+	background: #149174;
+	color: #0C5645;
+}
+
+.red-quark-create-users button:active {
+	border: 0;
+}
+</style>
+
+<script>
+	$(document).ready(
+			function() {
+				$('.red-quark-create-users .file-upload input').change(
+						function() {
+							$('.red-quark-create-users .file-upload p').text(
+									this.files.length + " file(s) selected");
+						});
+			});
+
+	function validate(file) {
+		var ext = file.split(".");
+		ext = ext[ext.length - 1].toLowerCase();
+		var arrayExtensions = [ "xls", "xlsx" ];
+		$('#uploadFileBtn').removeAttr("disabled");
+
+		if (arrayExtensions.lastIndexOf(ext) == -1) {
+			alert("Wrong file type. Upload only files with extensions .xls or .xlsx");
+			$("#fileToUpload").val("");
+			$('#uploadFileBtn').attr('disabled', 'disabled');
+		}
+	}
+</script>
+
+<form>
+	<div class="file-upload">
+		<input type="file" id="fileToUpload" name="fileToUpload" onchange="validate(this.value)">
+		<p>Drag your files here or click in this area.</p>
+	</div>
+	<input type="submit" id="uploadFileBtn" name="submit" value="Upload" class="upload-btn-submit" disabled>
+</form>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/excelApp" mode="merge"/>
+    <filter root="/content/excelApp" mode="merge"/>
+    <filter root="/content/dam/excelApp" mode="merge"/>
+</workspaceFilter>
