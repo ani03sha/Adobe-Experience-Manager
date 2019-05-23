@@ -23,7 +23,8 @@ import org.slf4j.LoggerFactory;
 				"sling.servlet.resourceTypes=" + "sling/servlet/default",
 				"sling.servlet.selectors="+"feed",
 				"sling.servlet.selectors="+"feedentry",
-				"sling.servlet.extensions="+"xml"})
+				"sling.servlet.extensions="+"xml",
+				"service.ranking=" + 1003})
 public class CustomFeedRendererServlet extends SlingAllMethodsServlet {
 	
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
