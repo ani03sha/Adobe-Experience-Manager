@@ -10,4 +10,5 @@ public final class AppConstants {
 	public static final String EMPTY_STRING = "";
 	public static final String DEFAULT_PASSWORD = "abcd1234";
 	public static final String DEFAULT_GROUP = "everyone";
+	public static final String DATASOURCE_PATH = "/apps/learning/components/common/data/";
 }
