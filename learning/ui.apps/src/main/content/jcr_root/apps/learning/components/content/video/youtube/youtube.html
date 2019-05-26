@@ -1,0 +1,29 @@
+<sly 
+	data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" 
+    data-sly-call="${clientLib.all @ categories='learning.youtube'}" data-sly-unwrap />
+
+<div data-sly-test="${wcmmode.edit || wcmmode.design}">
+    YouTube component
+</div>
+
+<!--/* YouTube Video Component starts */-->
+
+<h1>YouTube Video</h1>
+<sly data-sly-use.ytVideo="org.redquark.aem.learning.core.cq.video.YouTubeVideoComponent" />
+
+<div>
+	${ytVideo.youtubeVideo.html @ context='html'}
+</div>
+<sly data-sly-test="${properties.showDetails}">
+	<button class="accordion">Video Title</button>
+	<div class="panel">
+		<p>${ytVideo.youtubeVideo.title}</p>
+	</div>
+
+	<button class="accordion">Video Author</button>
+	<div class="panel">
+		<p>${ytVideo.youtubeVideo.author_name}</p>
+	</div>
+</sly>
+
+<!--/* YouTube Video Component ends */-->
