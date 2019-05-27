@@ -1,0 +1,21 @@
+<sly 
+	data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" 
+    data-sly-call="${clientLib.all @ categories='learning.tab'}" data-sly-unwrap />
+
+<div data-sly-test="${wcmmode.edit || wcmmode.design}">
+    Tab component
+</div>
+
+<sly data-sly-use.multiItems="org.redquark.aem.learning.core.models.multifield.TabModel" />
+
+<div class="tabLearning">
+	<div data-sly-list.head="${multiItems.tabs.listChildren}">
+		<button class="tabLinks" onclick="openTab(event, ${head.tabId @ context='scriptString'})">${head.tabHeading}</button>
+    </div>
+</div>
+
+<div data-sly-list.head="${multiItems.tabs.listChildren}">
+	<div id=${head.tabId} class="tabContentLearning">
+  		<p>${head.tabDescription}</p>
+	</div>
+</div>
