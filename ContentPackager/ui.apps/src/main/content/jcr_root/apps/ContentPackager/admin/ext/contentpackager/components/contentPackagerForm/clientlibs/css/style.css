@@ -1,0 +1,67 @@
+.red-quark-content-packager {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -250px;
+	width: 500px;
+	height: 200px;
+}
+
+.red-quark-content-packager .text-fields {
+	width: 500px;
+    height: 40px;
+    margin-left: -8px;
+    margin-bottom: 16px;
+}
+
+.red-quark-content-packager .file-upload {
+	border: 4px dashed gray;
+	margin-left: -12px;
+	margin-bottom: 16px;
+}
+
+.red-quark-content-packager .file-upload input[type="file"] {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	opacity: 0;
+	width: 500px;
+	height: 150px;
+	margin-left: -8px;
+	position: relative;
+}
+
+.red-quark-content-packager .file-upload p {
+	position: absolute;
+	left: 50%;
+	top: 115%;
+	width: 80%;
+	margin-left: -40%;
+	text-align: center;
+	z-index: -1;
+}
+
+.red-quark-content-packager input[type="submit"] {
+	margin: 0;
+	color: #fff;
+	background: #326ec8;
+	border: none;
+	width: 500px;
+	height: 35px;
+	margin-top: -20px;
+	margin-left: -8px;
+	border-radius: 4px;
+	transition: all .2s ease;
+	outline: none;
+}
+
+.red-quark-content-packager button:hover {
+	background: #149174;
+	color: #0C5645;
+}
+
+.red-quark-content-packager button:active {
+	border: 0;
+}

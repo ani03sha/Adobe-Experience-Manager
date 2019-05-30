@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <tools jcr:primaryType="nt:unstructured">
+        <redquark
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Red Quark"
+            id="cq-tools-redquark">
+            <contentPackager
+                jcr:description="Create content package from the filters in the excel file"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Content Packager"
+                href="/apps/ContentPackager/admin/ext/contentpackager/content/contentPackager.html"
+                icon="project"
+                id="granite-content-packager"/>
+        </redquark>
+    </tools>
+</jcr:root>
