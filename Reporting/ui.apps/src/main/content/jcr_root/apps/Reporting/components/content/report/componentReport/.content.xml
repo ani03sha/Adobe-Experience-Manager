@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="This component creates a simple form to fetch the list of components used on a page "
+    jcr:primaryType="cq:Component"
+    jcr:title="Component Report"
+    sling:resourceSuperType="wcm/foundation/components/parbase"
+    componentGroup="Reporting"/>

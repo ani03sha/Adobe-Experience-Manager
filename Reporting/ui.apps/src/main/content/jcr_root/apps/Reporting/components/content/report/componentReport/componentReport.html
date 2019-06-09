@@ -1,0 +1,28 @@
+<sly 
+	data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" 
+    data-sly-call="${clientLib.all @ categories='reporting.componentreport'}" data-sly-unwrap />
+
+<form action="/bin/reports/component" method="post">
+
+  <h1>Component Report</h1>
+
+  <fieldset>
+    <legend><span class="number">R</span> Basic report parameters</legend>
+
+	<label>Report Name:*</label>
+    <input type="text" id="reportName" name="reportName" required>
+
+    <label>Search Path:</label>
+    <input type="text" id="searchPath" name="searchPath">
+
+    <label>Component Path:*</label>
+    <input type="text" id="componentPath" name="componentPath" required>
+
+    <label>Only include activated pages</label>
+  	<input type="checkbox" id="activated" value="true" name="isActivated">
+
+   </fieldset>
+
+  <button type="submit" onClick="window.location.reload();">Fetch results</button>
+
+</form>
