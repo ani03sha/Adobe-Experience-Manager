@@ -1,0 +1,9 @@
+<sly data-sly-test="${properties.color}">
+	<div style="color:${properties.color @context='html'};">
+		<h1 style="color: ${properties.color @ context='styleString'};">${properties.title}</h1>
+	</div>
+</sly>
+
+<sly data-sly-test="${wcmmode.edit && !properties.color}">
+	<div class="cq-placeholder cq-marker-start" data-emptytext="Please Choose a Color"></div>
+</sly>
