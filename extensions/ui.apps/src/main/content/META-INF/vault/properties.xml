@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>FileVault Package Properties</comment>
+<entry key="buildCount">1</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="dependencies" />
+<entry key="packageFormatVersion">2</entry>
+<entry key="description">Extensions Content Package</entry>
+<entry key="group">Extensions</entry>
+<entry key="name">extensions</entry>
+<entry key="path">/etc/packages/Extensions/extensions-0.0.1-SNAPSHOT.zip</entry>
+</properties>

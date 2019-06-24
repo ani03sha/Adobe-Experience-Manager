@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1561367595291
+Build-Jdk: 1.8.0_201
+Built-By: Admin
+Bundle-Description: Maven Multimodule project for Extensions.
+Bundle-ManifestVersion: 2
+Bundle-Name: Extensions Bundle
+Bundle-SymbolicName: org.redquark.aem.extensions
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Sling-Model-Packages: org.rdquark.aem.extensions.model
+Tool: Bnd-3.3.0.201609221906

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/extensions" />
+    <filter root="/apps/sling/servlet/errorhandler" />
+    <filter root="/conf/extensions" mode="merge" />
+    <filter root="/etc/clientlibs/extensions" />
+</workspaceFilter>
