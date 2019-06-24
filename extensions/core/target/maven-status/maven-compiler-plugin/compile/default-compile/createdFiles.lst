@@ -1,0 +1,4 @@
+org\redquark\aem\extensions\core\services\impl\RenditionServiceImpl$JPEGTemplate.class
+org\redquark\aem\extensions\core\services\impl\GenerateJPEGThumbnailProcess.class
+org\redquark\aem\extensions\core\services\RenditionService.class
+org\redquark\aem\extensions\core\services\impl\RenditionServiceImpl.class

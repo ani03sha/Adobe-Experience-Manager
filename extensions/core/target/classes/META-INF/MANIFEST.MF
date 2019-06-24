@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1561367595291
+Bnd-LastModified: 1561388892586
 Build-Jdk: 1.8.0_201
 Built-By: Admin
 Bundle-Description: Maven Multimodule project for Extensions.
@@ -8,5 +8,30 @@ Bundle-Name: Extensions Bundle
 Bundle-SymbolicName: org.redquark.aem.extensions
 Bundle-Version: 0.0.1.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
+Export-Package: org.redquark.aem.extensions.core.services;uses:="com.day
+ .cq.dam.api,org.apache.sling.api.resource";version="0.0.1"
+Import-Package: com.adobe.cq.gfx;version="[1.0,2)",com.adobe.granite.wor
+ kflow;version="[1.0,2)",com.adobe.granite.workflow.exec;version="[1.2,2
+ )",com.adobe.granite.workflow.metadata;version="[1.0,2)",com.day.cq.dam
+ .api;version="[1.25,2)",com.day.cq.dam.api.renditions;version="[1.2,2)"
+ ,com.day.cq.dam.api.thumbnail;version="[1.1,2)",com.day.cq.dam.commons.
+ thumbnail;version="[2.0,3)",com.day.cq.dam.commons.util;version="[1.49,
+ 2)",javax.jcr;version="[2.0,3)",org.apache.commons.io;version="[1.4,2)"
+ ,org.apache.commons.lang3;version="[3.0,4)",org.apache.commons.lang3.ma
+ th;version="[3.0,4)",org.apache.sling.api.resource;version="[2.11,3)",o
+ rg.redquark.aem.extensions.core.services,org.slf4j;version="[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="com.adobe.gra
+ nite.workflow.exec.WorkflowProcess",osgi.service;objectClass:List<Strin
+ g>="org.redquark.aem.extensions.core.services.RenditionService"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.3.0)(!(version>=2.0.0)))",osgi.service;filter:="(objectC
+ lass=com.adobe.cq.gfx.Gfx)";effective:=active,osgi.service;filter:="(ob
+ jectClass=com.day.cq.dam.api.renditions.RenditionMaker)";effective:=act
+ ive,osgi.service;filter:="(objectClass=org.redquark.aem.extensions.core
+ .services.RenditionService)";effective:=active,osgi.ee;filter:="(&(osgi
+ .ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/org.redquark.aem.extensions.core.services.im
+ pl.GenerateJPEGThumbnailProcess.xml,OSGI-INF/Generate-JPEG-renditions-f
+ or-images.xml
 Sling-Model-Packages: org.rdquark.aem.extensions.model
 Tool: Bnd-3.3.0.201609221906
