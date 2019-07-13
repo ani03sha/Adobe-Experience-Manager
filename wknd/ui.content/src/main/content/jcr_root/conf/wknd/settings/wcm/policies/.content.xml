@@ -32,12 +32,12 @@
                             mergeList="{Boolean}true"/>
                     </content-default>
                     <policy_235079902521600
-                        jcr:lastModified="{Date}2019-07-13T17:09:50.316+05:30"
+                        jcr:lastModified="{Date}2019-07-13T17:55:58.978+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="WKND Content"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/libs/dam/cfm/components/contentfragment,/libs/wcm/foundation/components/responsivegrid,/apps/wknd/components/content/breadcrumb,/apps/wknd/components/content/image,/apps/wknd/components/content/list,/apps/wknd/components/content/text,/apps/wknd/components/content/title]">
+                        components="[/libs/dam/cfm/components/contentfragment,/libs/wcm/foundation/components/responsivegrid,/apps/wknd/components/content/breadcrumb,/apps/wknd/components/content/byline,/apps/wknd/components/content/image,/apps/wknd/components/content/list,/apps/wknd/components/content/text,/apps/wknd/components/content/title]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                         <cq:authoring jcr:primaryType="nt:unstructured">
                             <assetToComponentMapping jcr:primaryType="nt:unstructured">

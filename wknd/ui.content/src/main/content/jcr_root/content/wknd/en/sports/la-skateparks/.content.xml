@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2019-07-13T17:32:32.017+05:30"
+        cq:lastModified="{Date}2019-07-13T18:39:33.741+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/wknd/settings/wcm/templates/article-page-template"
         jcr:primaryType="cq:PageContent"
@@ -97,6 +97,16 @@
                                 type="h2"/>
                         </par0>
                     </contentfragment>
+                    <byline
+                        jcr:created="{Date}2019-07-13T17:56:22.905+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2019-07-13T18:35:19.903+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/content/byline"
+                        fileReference="/content/dam/we-retail/en/activities/running/running-trail-man.jpg"
+                        name="Jeremy Stone"
+                        occupations="[Athlete,Wildlife photographer]"/>
                 </responsivegrid>
                 <responsivegrid_1545478423
                     jcr:created="{Date}2019-07-13T17:11:25.694+05:30"
