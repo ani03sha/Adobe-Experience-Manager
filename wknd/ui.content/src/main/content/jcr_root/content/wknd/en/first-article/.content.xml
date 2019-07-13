@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2019-07-13T16:14:13.030+05:30"
+        cq:lastModified="{Date}2019-07-13T17:02:32.821+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/wknd/settings/wcm/templates/article-page-template"
         jcr:primaryType="cq:PageContent"
@@ -25,6 +25,24 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wknd/components/content/breadcrumb"/>
+                <title
+                    cq:styleIds="[1563015510647]"
+                    jcr:created="{Date}2019-07-13T16:31:14.943+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-07-13T16:31:14.943+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/content/title"/>
+                <text_216609596
+                    cq:styleIds="[1563015883407]"
+                    jcr:created="{Date}2019-07-13T16:35:43.657+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-07-13T16:37:10.762+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/content/text"
+                    text="&lt;blockquote>&amp;quot;Talk is cheap, show me the code&amp;quot;&lt;/blockquote>&#xd;&#xa;&lt;p>&lt;u>Linus Torvalds&lt;/u>&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"/>
                 <text
                     jcr:created="{Date}2019-07-13T16:04:39.917+05:30"
                     jcr:createdBy="admin"
@@ -102,6 +120,37 @@
                             width="4"/>
                     </cq:responsive>
                 </image_1658294602>
+                <list
+                    cq:styleIds="[1563016369847]"
+                    jcr:created="{Date}2019-07-13T16:43:47.362+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-07-13T16:45:42.770+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/content/list"
+                    childDepth="1"
+                    linkItems="true"
+                    listFrom="static"
+                    pages="[/content/we-retail/language-masters/en/about-us,/content/we-retail/language-masters/en/equipment,/content/we-retail/language-masters/en/experience]"
+                    showDescription="true"
+                    showModificationDate="true"
+                    sortOrder="asc"
+                    tagsMatch="any"/>
+                <contentfragment
+                    jcr:created="{Date}2019-07-13T16:56:25.017+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-07-13T17:02:32.570+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="dam/cfm/components/contentfragment"
+                    element="main"
+                    fileReference="/content/dam/wknd/ultimate-guide-to-la-skteparks"
+                    text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                    variation="master">
+                    <par1
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                </contentfragment>
             </responsivegrid>
         </root>
     </jcr:content>
