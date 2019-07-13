@@ -1,4 +1,9 @@
+org\redquark\aem\extensions\core\servlets\MyServlet.class
 org\redquark\aem\extensions\core\services\impl\RenditionServiceImpl$JPEGTemplate.class
-org\redquark\aem\extensions\core\services\impl\GenerateJPEGThumbnailProcess.class
+org\redquark\aem\extensions\core\config\MyConfiguration.class
 org\redquark\aem\extensions\core\services\RenditionService.class
+org\redquark\aem\extensions\core\services\MyService.class
+org\redquark\aem\extensions\core\servlets\FindDuplicateBinaries.class
+org\redquark\aem\extensions\core\services\impl\GenerateJPEGThumbnailProcess.class
+org\redquark\aem\extensions\core\services\impl\MyServiceImpl.class
 org\redquark\aem\extensions\core\services\impl\RenditionServiceImpl.class
