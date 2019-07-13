@@ -1,0 +1,32 @@
+{
+	"byline": {
+		"jcr:primaryType": "nt:unstructured",
+		"sling:resourceType": "wknd/components/content/byline",
+		"name": "Jeremy Stone",
+		"occupations": [
+			"Photographer",
+			"Blogger",
+			"YouTuber"
+		]
+	},
+	"empty": {
+		"jcr:primaryType": "nt:unstructured",
+		"sling:resourceType": "wknd/components/content/byline"
+	},
+	"without-name": {
+		"jcr:primaryType": "nt:unstructured",
+		"sling:resourceType": "wknd/components/content/byline",
+		"occupations": "[Photographer, Blogger, YouTuber]"
+	},
+	"without-occupations": {
+		"jcr:primaryType": "nt:unstructured",
+		"sling:resourceType": "wknd/components/content/byline",
+		"name": "Jeremy Stone"
+	},
+	"without-occupations-empty-array": {
+		"jcr:primaryType": "nt:unstructured",
+		"sling:resourceType": "wknd/components/content/byline",
+		"name": "Jane Doe",
+		"occupations": []
+	}
+}
