@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2019-07-13T13:17:55.268+05:30"
+        cq:lastModified="{Date}2019-07-13T16:14:13.030+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/wknd/settings/wcm/templates/article-page-template"
         jcr:primaryType="cq:PageContent"
@@ -25,14 +25,83 @@
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wknd/components/content/breadcrumb"/>
-                <image
-                    jcr:created="{Date}2019-07-13T13:17:55.264+05:30"
+                <text
+                    jcr:created="{Date}2019-07-13T16:04:39.917+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2019-07-13T13:17:55.264+05:30"
+                    jcr:lastModified="{Date}2019-07-13T16:12:43.931+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/content/text"
+                    text="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&lt;/p>&#xd;&#xa;"
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="6"/>
+                    </cq:responsive>
+                </text>
+                <text_330598079
+                    jcr:created="{Date}2019-07-13T16:11:01.772+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-07-13T16:12:51.092+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/content/text"
+                    text="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum&lt;/p>&#xd;&#xa;"
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="6"/>
+                    </cq:responsive>
+                </text_330598079>
+                <image
+                    jcr:created="{Date}2019-07-13T16:12:55.911+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-07-13T16:13:45.633+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wknd/components/content/image"
-                    fileReference="/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/northern-lights.jpg"/>
+                    fileReference="/content/dam/core-components-examples/library/sample-assets/mountain-range.jpg">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="4"/>
+                    </cq:responsive>
+                </image>
+                <image_532211882
+                    jcr:created="{Date}2019-07-13T16:13:16.233+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-07-13T16:14:04.174+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/content/image"
+                    fileReference="/content/dam/core-components-examples/library/sample-assets/snowy-mountain-glacier.jpg">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="4"/>
+                    </cq:responsive>
+                </image_532211882>
+                <image_1658294602
+                    jcr:created="{Date}2019-07-13T16:13:31.024+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-07-13T16:14:13.023+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/content/image"
+                    fileReference="/content/dam/core-components-examples/library/sample-assets/lava-into-ocean.jpg">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="4"/>
+                    </cq:responsive>
+                </image_1658294602>
             </responsivegrid>
         </root>
     </jcr:content>
