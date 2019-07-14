@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2019-07-13T13:10:49.690+05:30"
+        cq:lastModified="{Date}2019-07-14T09:25:18.624+05:30"
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         sling:resourceType="wcm/core/components/policies/mappings">
@@ -14,6 +14,28 @@
                 cq:policy="wcm/foundation/components/responsivegrid/policy_235079902521600"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/core/components/policies/mapping"/>
+            <responsivegrid_596073564
+                cq:policy="wcm/foundation/components/responsivegrid/policy_305847225857017"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <navigation
+                    cq:policy="wknd/components/structure/navigation/policy_1563074330177"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/core/components/policies/mapping"/>
+            </responsivegrid_596073564>
+            <header
+                cq:policy="wknd/components/structure/header/policy_1563076173422"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping">
+                <navigation
+                    cq:policy="wknd/components/structure/navigation/policy_308021916904286"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/core/components/policies/mapping"/>
+                <search
+                    cq:policy="wknd/components/structure/search/policy_1563076297508"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/core/components/policies/mapping"/>
+            </header>
         </root>
     </jcr:content>
 </jcr:root>

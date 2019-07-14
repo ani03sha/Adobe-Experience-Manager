@@ -74,6 +74,16 @@
                         components="[/apps/wknd/components/content/image,/apps/wknd/components/content/list,/apps/wknd/components/content/text,/apps/wknd/components/content/title]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </policy_249877736834493>
+                    <policy_305847225857017
+                        cq:styleDefaultClasses="cmp-layout-container--footer"
+                        jcr:lastModified="{Date}2019-07-14T08:48:40.256+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="WKND Footer"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[group:WKND.Structure,group:Workflow]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_305847225857017>
                 </responsivegrid>
             </components>
         </foundation>
@@ -309,7 +319,75 @@
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </policy_1563017869815>
                 </breadcrumb>
+                <navigation jcr:primaryType="nt:unstructured">
+                    <policy_1563074127409
+                        cq:styleDefaultClasses="cmp-navigation--footer"
+                        jcr:lastModified="{Date}2019-07-14T08:46:40.259+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="WKND Navigation - Footer"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        collectAllPages="false"
+                        navigationRoot="/content/wknd/en"
+                        skipNavigationRoot="true"
+                        structureDepth="1">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1563074127409>
+                </navigation>
             </content>
+            <structure jcr:primaryType="nt:unstructured">
+                <navigation jcr:primaryType="nt:unstructured">
+                    <policy_1563074330177
+                        cq:styleDefaultClasses="cmp-navigation--footer"
+                        jcr:lastModified="{Date}2019-07-14T08:50:48.292+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="WKND Navigation - Footer"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        collectAllPages="false"
+                        navigationRoot="/content/wknd/en"
+                        skipNavigationRoot="true"
+                        structureDepth="1">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1563074330177>
+                    <policy_308021916904286
+                        jcr:lastModified="{Date}2019-07-14T09:25:27.557+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="WKND Navigation - Header"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        collectAllPages="false"
+                        navigationRoot="/content/wknd/en"
+                        skipNavigationRoot="true"
+                        structureDepth="1">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_308021916904286>
+                </navigation>
+                <header jcr:primaryType="nt:unstructured">
+                    <policy_1563076173422
+                        jcr:lastModified="{Date}2019-07-14T09:23:03.251+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="WKND Header"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        rootPath="/content/wknd/en">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1563076173422>
+                </header>
+                <search jcr:primaryType="nt:unstructured">
+                    <policy_1563076297508
+                        jcr:lastModified="{Date}2019-07-14T09:23:20.558+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="WKND Search - Header"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        resultsSize="5"
+                        searchRoot="/content/wknd/en"
+                        searchTermMinimumLength="3">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1563076297508>
+                </search>
+            </structure>
         </components>
     </wknd>
 </jcr:root>
