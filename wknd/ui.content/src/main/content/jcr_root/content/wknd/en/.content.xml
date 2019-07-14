@@ -2,8 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2019-07-13T13:14:17.987+05:30"
+        cq:lastModified="{Date}2019-07-14T11:00:24.979+05:30"
         cq:lastModifiedBy="admin"
+        cq:styleIds="[1563082169843]"
         cq:template="/conf/wknd/settings/wcm/templates/landing-page-template"
         jcr:primaryType="cq:PageContent"
         jcr:title="Home"
@@ -12,18 +13,182 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <responsivegrid
-                jcr:created="{Date}2019-07-13T13:10:09.379+05:30"
+                jcr:created="{Date}2019-03-19T13:22:52.385-07:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2019-07-13T13:10:16.009+05:30"
+                jcr:lastModified="{Date}2019-03-19T13:23:39.376-07:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <carousel
+                    cq:styleIds="[1563081929831]"
+                    jcr:created="{Date}2019-07-14T10:14:42.370+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-07-14T10:20:15.248+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/content/carousel"
+                    autopauseDisabled="false"
+                    autoplay="false"
+                    delay="5000">
+                    <teaser
+                        cq:panelTitle="LA Skatepark"
+                        cq:styleIds="[1563080859183]"
+                        jcr:created="{Date}2019-07-14T10:17:24.009+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2019-07-14T10:18:48.263+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/content/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="true"
+                        fileReference="/content/dam/wknd/en/los-angeles/article_01_hero.png"
+                        textIsRich="true"
+                        titleFromPage="true">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/wknd/en/sports/la-skateparks"
+                                text="Read More"/>
+                        </actions>
+                    </teaser>
+                    <item_1563079763018
+                        cq:panelTitle="Office"
+                        cq:styleIds="[1563080859183]"
+                        jcr:lastModified="{Date}2019-07-14T10:22:34.980+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/content/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="true"
+                        fileReference="/content/dam/wknd/en/los-angeles/desk-hero2.jpg"
+                        textIsRich="true"
+                        titleFromPage="true">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/wknd/en/shopping/office-space"
+                                text="Read More"/>
+                        </actions>
+                    </item_1563079763018>
+                    <item_1563079800412
+                        cq:panelTitle="Architecture"
+                        cq:styleIds="[1563080859183]"
+                        jcr:lastModified="{Date}2019-07-14T10:26:03.402+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/content/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="true"
+                        fileReference="/content/dam/wknd/en/los-angeles/architecture-hero.jpg"
+                        textIsRich="true"
+                        titleFromPage="true">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/wknd/en/art/architecture"
+                                text="Read More"/>
+                        </actions>
+                    </item_1563079800412>
+                </carousel>
+                <responsivegrid
+                    cq:styleIds="[1563016748058]"
+                    jcr:created="{Date}2019-07-14T09:53:16.837+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-07-14T09:53:16.837+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <cq:responsive jcr:primaryType="nt:unstructured"/>
+                    <teaser
+                        cq:styleIds="[1563079093889]"
+                        jcr:created="{Date}2019-07-14T09:53:57.284+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Checkout these great underground coffee shops&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2019-07-14T09:56:35.762+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/content/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="true"
+                        fileReference="/content/dam/wknd/en/los-angeles/roaster-image.jpeg"
+                        textIsRich="true"
+                        titleFromPage="true">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/wknd/en/restaurants/best-roasters"
+                                text="Read More"/>
+                        </actions>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                    </teaser>
+                    <teaser_2097542707
+                        cq:styleIds="[1563079093889]"
+                        jcr:created="{Date}2019-07-14T09:57:06.387+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Know the best musicians who play underground&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2019-07-14T10:05:11.083+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/content/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/wknd/en/los-angeles/nadine-shaabana-161337.jpg"
+                        textIsRich="true"
+                        titleFromPage="true">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/wknd/en/music/underground-musicians"
+                                text="Read More"/>
+                        </actions>
+                    </teaser_2097542707>
+                    <teaser_437381312
+                        cq:styleIds="[1563079093889]"
+                        jcr:created="{Date}2019-07-14T09:57:21.546+05:30"
+                        jcr:createdBy="admin"
+                        jcr:description="&lt;p>Photography Exhibitions&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2019-07-14T10:05:22.062+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Photography Exhibitions"
+                        sling:resourceType="wknd/components/content/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/wknd/en/los-angeles/whiteflowers.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="4"/>
+                        </cq:responsive>
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/wknd/en/art/photography"
+                                text="Read More"/>
+                        </actions>
+                    </teaser_437381312>
+                </responsivegrid>
+            </responsivegrid>
         </root>
     </jcr:content>
+    <restaurants/>
+    <bars/>
     <sports/>
-    <Restaurant/>
-    <Bars/>
-    <Art/>
-    <Music/>
-    <Shopping/>
+    <art/>
+    <music/>
+    <shopping/>
 </jcr:root>

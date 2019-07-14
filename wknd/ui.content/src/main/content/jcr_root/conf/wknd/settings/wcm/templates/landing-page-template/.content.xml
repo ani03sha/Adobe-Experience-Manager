@@ -2,7 +2,7 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:lastModified="{Date}2019-07-14T09:25:18.624+05:30"
+        cq:lastModified="{Date}2019-07-14T10:59:39.827+05:30"
         cq:lastModifiedBy="admin"
         cq:templateType="/conf/wknd/settings/wcm/template-types/empty-page"
         jcr:description="Landing page will use this template"
