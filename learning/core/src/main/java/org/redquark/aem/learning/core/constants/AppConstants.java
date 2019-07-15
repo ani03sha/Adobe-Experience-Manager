@@ -12,4 +12,5 @@ public final class AppConstants {
 	public static final String DEFAULT_GROUP = "everyone";
 	public static final String DATASOURCE_PATH = "/apps/learning/components/common/data/";
 	public static final String YOUTUBE_VIDEO_URL = "https://www.youtube.com/oembed?url=http://www.youtube.com/watch?v=";
+	public static final String DAM_ROOT = "/content/dam";
 }
