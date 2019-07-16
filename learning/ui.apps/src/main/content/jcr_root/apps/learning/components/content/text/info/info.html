@@ -1,0 +1,14 @@
+<div data-sly-test="${wcmmode.edit || wcmmode.design}">
+    Info Component
+</div>
+
+<sly
+	data-sly-use.info="${'org.redquark.aem.learning.core.cq.text.InfoComponent' @
+		fullName=properties.fullName,
+    	age=properties.age,
+    	married=properties.married
+	}" />
+
+<sly data-sly-test="${info}">
+<h1>${info.details}</h1>
+</sly>
