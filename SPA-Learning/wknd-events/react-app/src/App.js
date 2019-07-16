@@ -1,27 +1,21 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
+import { Page, withModel, EditorContext, Utils } from '@adobe/cq-react-editable-components';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1>Welcome to AEM + React</h1>
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+// This component is the application entry point
+class App extends Page {
+	
+	render() {
+		
+		return(
+				<div className='App'>
+					<header className='App-header'>
+						<h1>Welcome to AEM + React</h1>
+					</header>
+						{ this.childComponents }
+						{ this.childPages }
+				</div>
+		);
+	}	
 }
 
-export default App;
+export default withModel(App);
