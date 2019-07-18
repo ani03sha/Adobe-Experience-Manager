@@ -1,0 +1,23 @@
+<div data-sly-test="${wcmmode.edit || wcmmode.design}">
+    Companies List
+</div>
+
+<sly data-sly-use.companiesModel="org.redquark.aem.learning.core.models.multifield.CompaniesListModel" />
+<sly data-sly-test.empty="${!companiesModel.companies}" />
+
+<div data-sly-test="${wcmmode.edit && empty}" class="cq-placeholder" data=emptytext="${component.title}"></div>
+
+<sly data-sly-test="${!empty}">
+	<div>
+		<ul data-sly-list.company="{companiesModel.companies}">
+			<li>${company.name}
+				<ul data-sly-list.department="${company.departments}">
+                	<li>
+                    	<b>Department:</b> ${department.name} <br/>
+                        <b>Manager:</b> ${department.manager}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</sly>

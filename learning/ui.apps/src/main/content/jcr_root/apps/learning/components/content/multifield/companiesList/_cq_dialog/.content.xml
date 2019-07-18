@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Companies"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+  <content jcr:primaryType="nt:unstructured"
+           sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+    <items jcr:primaryType="nt:unstructured">
+      <column jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+          <companies
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+            fieldDescription="Click 'Add Field' to add a new company."
+            composite="{Boolean}true">
+            <field
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/container"
+              name="./companies">
+              <items jcr:primaryType="nt:unstructured">
+                <name
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                  fieldLabel="Comp. Name"
+                  name="name"/>
+                <departments
+                  jcr:primaryType="nt:unstructured"
+                  sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                  fieldDescription="Click 'Add Field' to add a new department."
+                  fieldLabel="Departments"
+                  composite="{Boolean}true">
+                  <field
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                    name="./departments">
+                    <items jcr:primaryType="nt:unstructured">
+                      <name
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Dep. Name"
+                        name="name"/>
+                      <manager
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Manager"
+                        name="manager"/>
+                    </items>
+                  </field>
+                </departments>
+              </items>
+            </field>
+          </companies>
+        </items>
+      </column>
+    </items>
+  </content>
+</jcr:root>
