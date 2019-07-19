@@ -3,7 +3,6 @@ package org.redquark.aem.learning.core.servlets.user;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.security.Principal;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -15,7 +14,6 @@ import java.util.Set;
 
 import javax.jcr.RepositoryException;
 import javax.jcr.Session;
-import javax.jcr.security.Privilege;
 import javax.servlet.Servlet;
 
 import org.apache.jackrabbit.api.security.JackrabbitAccessControlManager;
@@ -71,7 +69,7 @@ public class UserReportServlet extends SlingSafeMethodsServlet {
 			
 			Iterator<Authorizable> iterator = userManager.findAuthorizables("jcr:primaryType", "rep:Group");
 			
-			PrintWriter out = response.getWriter();
+			response.getWriter();
 			
 			JackrabbitAccessControlManager acm = (JackrabbitAccessControlManager) session.getAccessControlManager();
 			
@@ -91,10 +89,7 @@ public class UserReportServlet extends SlingSafeMethodsServlet {
 						memberList.add(authorizable2.getID() + "\n");
 						Set<Principal> principals = new HashSet<>();
 						principals.add(authorizable2.getPrincipal());
-						Privilege[] privileges = acm.getPrivileges("/content/CSCX1/columbia", principals);
-						for(Privilege p : privileges) {
-						//out.println(authorizable2 + ":--->" + authorizable2.getID() + ":--->" + p.getName());
-						}
+						acm.getPrivileges("/content/CSCX1/columbia", principals);
 					}
 					memberMap.put(group.getID(), memberList);
 					
@@ -137,9 +132,15 @@ public class UserReportServlet extends SlingSafeMethodsServlet {
 			FileOutputStream stream = new FileOutputStream("E:\\development\\user.xlsx");
 			workbook.write(stream);
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			log.error(e.getMessage(), e);
 		} catch (IOException e) {
-			e.printStackTrace();
+			log.error(e.getMessage(), e);
+		}
+		
+		try {
+			workbook.close();
+		} catch (IOException e) {
+			log.error(e.getMessage(), e);
 		}
 	}
 	
