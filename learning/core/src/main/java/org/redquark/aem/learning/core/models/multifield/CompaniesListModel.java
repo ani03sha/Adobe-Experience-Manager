@@ -13,35 +13,35 @@ import org.apache.sling.models.annotations.Model;
  *
  */
 @Model(adaptables = { Resource.class }, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class CompaniesListModel {
+public interface CompaniesListModel {
 
 	// The name `getCompanies` corresponds to the multifield name="./companies"
 	@Inject
-	List<Company> companies;
+	List<Company> getCompanies();
 
 	/**
 	 * Company model has a name and a list of departments
 	 */
 	@Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-	public class Company {
+	interface Company {
 
 		@Inject
-		String name;
+		String getName();
 
 		// The name `getDepartments` corresponds to the multifield name="./departments"
 		@Inject
-		List<Department> departments;
+		List<Department> getDepartments();
 	}
 
 	/**
 	 * Department model has a name and a manager
 	 */
-	public class Department {
+	interface Department {
 
 		@Inject
-		String name;
+		String getName();
 
 		@Inject
-		String manager;
+		String getManager();
 	}
 }
