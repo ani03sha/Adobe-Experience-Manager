@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1563960476389
+Build-Jdk: 1.8.0_201
+Built-By: Admin
+Bundle-Description: Maven Multimodule project for MSM.
+Bundle-ManifestVersion: 2
+Bundle-Name: MSM Bundle
+Bundle-SymbolicName: org.redquark.aem.msm
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.redquark.aem.msm.core.models;uses:="javax.annotation
+ ,org.apache.sling.api.resource,org.apache.sling.models.annotations";ver
+ sion="0.0.1",org.redquark.aem.msm.core.services;version="0.0.1"
+Import-Package: com.day.cq.wcm.msm.api;version="[5.9,6)",javax.annotatio
+ n,javax.inject,org.apache.sling.api.resource;version="[2.10,3)",org.apa
+ che.sling.models.annotations;version="[1.5,2)",org.apache.sling.models.
+ annotations.injectorspecific;version="[1.1,2)",org.redquark.aem.msm.cor
+ e.services,org.slf4j;version="[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="org.redquark.
+ aem.msm.core.services.LiveCopyStatusService"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.3.0)(!(version>=2.0.0)))",osgi.service;filter:="(objectC
+ lass=com.day.cq.wcm.msm.api.LiveRelationshipManager)";effective:=active
+ ,osgi.service;filter:="(objectClass=org.apache.sling.api.resource.Resou
+ rceResolverFactory)";effective:=active,osgi.ee;filter:="(&(osgi.ee=Java
+ SE)(version=1.8))"
+Service-Component: OSGI-INF/org.redquark.aem.msm.core.services.impl.Live
+ CopyStatusServiceImpl.xml
+Sling-Model-Packages: org.redquark.aem,msm.core
+Tool: Bnd-3.3.0.201609221906

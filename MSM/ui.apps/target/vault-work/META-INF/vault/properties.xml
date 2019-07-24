@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>MSM Content Package</comment>
+<entry key="createdBy">Admin</entry>
+<entry key="name">msm.ui.apps</entry>
+<entry key="acHandling">merge_preserve</entry>
+<entry key="created">2019-07-24T14:57:59.286+0530</entry>
+<entry key="groupId">org.redquark.aem</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">msm</entry>
+<entry key="description">Maven Multimodule project for MSM.</entry>
+<entry key="artifactId">msm.ui.apps</entry>
+<entry key="path">/etc/packages/msm/msm.ui.apps.zip</entry>
+</properties>

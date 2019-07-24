@@ -1,0 +1,3 @@
+org\redquark\aem\msm\core\models\PathModel.class
+org\redquark\aem\msm\core\services\LiveCopyStatusService.class
+org\redquark\aem\msm\core\services\impl\LiveCopyStatusServiceImpl.class

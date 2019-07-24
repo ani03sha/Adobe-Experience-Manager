@@ -1,0 +1,9 @@
+<h3>Live Copy Status Details</h3>
+
+<h4>Payload: ${properties.lcPath ? properties.lcPath : 'No path chosen'}</h4>
+<sly data-sly-use.model="org.redquark.aem.msm.core.models.PathModel" />
+<sly data-sly-test="${properties.lcPath}">
+	<p>
+		${model.liveCopyStatusDetails}
+    </p>
+</sly>
