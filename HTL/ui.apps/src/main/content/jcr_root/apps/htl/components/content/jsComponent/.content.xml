@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="This component demonstrates the usage of JavaScript in an HTL component"
+    jcr:primaryType="cq:Component"
+    jcr:title="JS Component"
+    componentGroup="HTL"/>

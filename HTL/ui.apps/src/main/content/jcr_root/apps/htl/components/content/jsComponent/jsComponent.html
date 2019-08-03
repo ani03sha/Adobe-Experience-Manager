@@ -1,0 +1,10 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	 data-sly-call="${clientlib.js @ categories='jsComponent'}" data-sly-unwrap />
+
+<p data-sly-test="${properties.text}">Text: ${properties.text}</p>
+
+<pre data-sly-use.model="org.redquark.aem.htl.core.models.JSComponentModel">
+	<div id="jsComponent">
+		<h2>JS Component says => ${model.message}</h2>
+    </div>
+</pre>
