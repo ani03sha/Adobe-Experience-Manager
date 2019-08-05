@@ -1,0 +1,7 @@
+<p data-sly-test="${properties.text}">${properties.text}</p>
+Tags
+<pre data-sly-use.tags="org.redquark.aem.htl.core.cqcomponents.GetTagsComponent" data-sly-list="${tags.tagCountBean}">
+	Title: ${item.tag.title}
+    Count: ${item.usageCount}
+    Path: ${item.tag.path}
+</pre>
