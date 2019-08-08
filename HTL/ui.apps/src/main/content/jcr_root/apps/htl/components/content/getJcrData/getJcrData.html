@@ -1,0 +1,11 @@
+<div data-sly-test="${wcmmode.edit && !properties.search}">
+    Get JCR Data Component
+</div>
+
+<h1>JCR data based on search term: ${properties.keyword}</h1>
+
+<div data-sly-test="${properties.keyword}" data-sly-use.search="org.redquark.aem.htl.core.cqcomponents.GetJCRDataComponent">
+    <ul data-sly-list="${search.paths}">
+        <li>${item}</li>
+    </ul>
+</div>
