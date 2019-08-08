@@ -58,7 +58,7 @@ public class GetTagsComponent extends WCMUsePojo {
 
 					if (resolvedTag != null) {
 						TagCountBean tagCountBean = new TagCountBean(resolvedTag,
-								getTrueTagCount(resolvedTag, getResourceResolver()).intValue());
+								getTrueTagCount(tagId, getResourceResolver()).intValue());
 						this.tagList.add(tagCountBean);
 					}
 				}
@@ -66,14 +66,14 @@ public class GetTagsComponent extends WCMUsePojo {
 		}
 	}
 
-	private Integer getTrueTagCount(Tag resolvedTag, ResourceResolver resourceResolver) {
+	private Integer getTrueTagCount(String tagId, ResourceResolver resourceResolver) {
 
 		int trueTagCount = 0;
 
 		Map<String, String> map = new LinkedHashMap<>();
 
-		map.put("tagId", resolvedTag.getTagID());
-		map.put("tagId.property", "cq:tags");
+		map.put("tagid", tagId);
+		map.put("tagid.property", "cq:tags");
 
 		PredicateGroup predicates = PredicateGroup.create(map);
 
