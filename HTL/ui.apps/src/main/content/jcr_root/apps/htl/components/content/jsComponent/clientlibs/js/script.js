@@ -4,13 +4,13 @@ window.onload = function() {
 
     div.onmouseover = function() {
         this.style.backgroundColor = 'green';
-        var h2s = this.getElementByTagName = ('h2');
+        var h2s = this.getElementsByTagName('h2');
         h2s[0].style.backgroundColor = 'Aqua';
     };
 
     div.onmouseout = function() {
         this.style.backgroundColor = 'transparent';
-        var h2S = this.getElementByTagName = ('h2');
+        var h2s = this.getElementsByTagName('h2');
         h2s[0].style.backgroundColor = 'transparent';
     };
 }
