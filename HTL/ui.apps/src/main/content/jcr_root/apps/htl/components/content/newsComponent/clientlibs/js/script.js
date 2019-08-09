@@ -4322,7 +4322,6 @@ $(document).ready(function() {
          $.ajax({
                 url: "/bin/getNews?tags="+tags,
                 success: function(result) {
- 
                     if(result.length==0) {
                          $("#news-data").html("<div class=\"alert alert-danger\"><strong>Oops!..</strong> Something went wrong, looks like no news today so please have ice-cream<span class=\"glyphicon glyphicon-ice-lolly-tasted\"></span></div>");
                     } else {
@@ -4333,9 +4332,6 @@ $(document).ready(function() {
                 error: function(xhr, status, error) {
                     $("#news-data").html("<div class=\"alert alert-danger\"><strong>Oops!..</strong> Something went wrong, looks like no news today so please have ice-cream<span class=\"glyphicon glyphicon-ice-lolly-tasted\"></span></div>");
                 }
- 
             });
     }
- 
- 
 });

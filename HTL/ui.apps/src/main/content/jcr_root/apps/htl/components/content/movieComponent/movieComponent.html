@@ -1,0 +1,92 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	 data-sly-call="${clientlib.css @ categories='movieComponent'}" data-sly-unwrap />
+
+<section role="main">
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <article>
+                    <h2 style="margin: 6px 5%">${properties.header}</h2>
+                    <div class='tabs tabs_animate'>
+                        <ul class='horizontal'>
+                            <li><a href="#tab-1">${properties.movieDetails}</a>
+                            </li>
+                            <li><a href="#tab-2">${properties.experience}</a>
+                            </li>
+                            <li><a href="#tab-3">${properties.reviews}</a>
+                            </li>
+                            <li><a href="#tab-4">${properties.contact}</a>
+                            </li>
+                            <li><a href="#tab-5">${properties.random}</a>
+                            </li>
+                        </ul>
+                        <div id='tab-1'>
+                        <div id="mvideo">
+
+                            <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" poster="${properties.fileReference}" data-setup="{}">
+                                <source src="${properties.video}" type='video/mp4'>
+                                        <p class="vjs-no-js">
+                                            To view this video please enable JavaScript, and consider upgrading to a web browser that
+                                            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                        </p>
+                            </video>
+                            </div>
+                            <div id="moviedata">
+                                <p><span>Movie : ${properties.movieName} <span> </p>
+                                <p>Release Date : ${properties.releaseDate} </p>
+                                <p>Director : ${properties.directors} </p>
+                                <p>Length : ${properties.movieLength}</p>
+                                <p>Production House : ${properties.productionHouse}</p>
+                                <p>Language : ${properties.language}</p>
+                                <p>Note : ${properties.note}</p>
+                            </div>
+
+                            <div data-sly-resource="${ @path='tab-1',resourceType='wcm/foundation/components/parsys'}"></div>
+                        </div>
+                        <div id='tab-2'>
+                            <p id="experience">Our Experience with ${properties.movieName}</p>
+                            <p id="rating">Ratings <img src="/content/dam/moviecomponent/rating/${properties.rating}-star.png" />
+                            </p>
+                            <p id="rating">Experience..... </p>
+                            <div id="experiencetext"> ${properties.movieExperience @ context="html"}</div>
+
+                            <div data-sly-resource="${ @path='tab-2',resourceType='wcm/foundation/components/parsys'}"></div>
+                        </div>
+                        <div id='tab-3'>
+
+                            <div id="reviewtext"><i> ${properties.review2description @ context="html"}</i>
+                            </div>
+                            <p id="reviewer"> -- by ${properties.review1person}</p>
+
+
+
+                            <div id="reviewtext"><i> ${properties.review2description @ context="html"}</i>
+                            </div>
+                            <p id="reviewer"> -- by ${properties.review2person}</p>
+
+                        </div>
+                        <div id='tab-4'>
+                        <div id="experiencetext">${properties.contactDescription}</div>
+                            <p id="rating"><span>Contact Person Name </span> ${properties.contactPerson}</p>
+                            <p id="rating"><span>Contact Person Position </span>${properties.contactPosition}</p>
+                            <p id="rating"><span>Contact Person Email </span>${properties.contactEmail}</p>
+                            <p id="rating"><span>Contact Person Number </span>${properties.contactNumber}</p>
+
+                        </div>
+                        <div id='tab-5'>
+                        <div  data-sly-use.v="org.redquark.aem.htl.core.cqcomponents.MovieComponent">
+                            <p data-sly-list="${v.files}"> 
+                                <img src="${item}" height=250 width=400 style="padding:4px"></img>
+                            </p>   
+                        </div>
+
+                        </div>
+                  </div>
+                </article>
+                </div>
+            </div>
+
+
+
+        </div>
+</section>
