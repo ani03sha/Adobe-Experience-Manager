@@ -2,10 +2,10 @@
     Get JCR Data Component
 </div>
 
-<h1>JCR data based on search term: ${properties.keyword}</h1>
+<h1>JCR data based on search term: ${properties.search}</h1>
 
 <div data-sly-test="${properties.keyword}" data-sly-use.search="org.redquark.aem.htl.core.cqcomponents.GetJCRDataComponent">
-    <ul data-sly-list="${search.paths}">
+    <ul data-sly-list="${search.jcrPaths}">
         <li>${item}</li>
     </ul>
 </div>

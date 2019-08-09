@@ -28,7 +28,7 @@
                                 sling:resourceType="granite/ui/components/foundation/form/textfield"
                                 fieldDescription="Enter the search term"
                                 fieldLabel="Keyword"
-                                name="./keyword"/>
+                                name="./search"/>
                         </items>
                     </columns>
                 </items>

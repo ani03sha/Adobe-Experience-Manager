@@ -1,0 +1,25 @@
+<div data-sly-test="${wcmmode.edit && !properties.address}">
+  	Please specify the url
+</div>   
+
+Results: 
+<div data-sly-test="${properties.link=='true'}" data-sly-use.paths="org.redquark.aem.htl.core.models.DOMParserModel">
+<b>Here are the Links</b>
+    <ul data-sly-list="${paths.links}"> 
+        <li>${item}</li>
+    </ul>   
+</div>
+
+<div data-sly-test="${properties.imp=='true'}" data-sly-use.import="org.redquark.aem.htl.core.models.DOMParserModel">
+<b>Here are the Imports</b>
+    <ul data-sly-list="${import.imports}"> 
+        <li>${item}</li>
+    </ul>  
+</div>
+
+<div data-sly-test="${properties.img=='true'}" data-sly-use.image="org.redquark.aem.htl.core.models.DOMParserModel">
+<b>Here are the Images</b>
+    <ul data-sly-list="${image.images}"> 
+        <li><img src="${item}"></li>
+    </ul>  
+</div>
