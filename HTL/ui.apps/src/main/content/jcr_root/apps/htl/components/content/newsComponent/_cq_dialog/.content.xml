@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="Parser"
+    jcr:title="News"
     sling:resourceType="cq/gui/components/authoring/dialog">
     <content
         jcr:primaryType="nt:unstructured"
@@ -23,36 +23,36 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
-                            <url
+                            <header
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                fieldDescription="Enter the URL"
-                                fieldLabel="URL"
-                                name="./url"/>
-                            <links
+                                fieldDescription="Enter the news header"
+                                fieldLabel="Header"
+                                name="./header"/>
+                            <tag1
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
-                                fieldDescription="Check if you wish to show links"
-                                name="./link"
-                                text="Links"
-                                uncheckedValue="false"
-                                value="true"/>
-                            <imports
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter first tag"
+                                fieldLabel="First Tag"
+                                name="./tagOne"/>
+                            <tag2
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
-                                fieldDescription="Check if you wish to show imports"
-                                name="./imp"
-                                text="Imports"
-                                uncheckedValue="false"
-                                value="true"/>
-                            <images
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter the second tag"
+                                fieldLabel="Second Tag"
+                                name="./tagTwo"/>
+                            <tag3
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
-                                fieldDescription="Check if you wish to show images"
-                                name="./img"
-                                text="Images"
-                                uncheckedValue="false"
-                                value="true"/>
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter the third tag"
+                                fieldLabel="Third Tag"
+                                name="./tagThree"/>
+                            <tag4
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter the fourth tag"
+                                fieldLabel="Fourth Tag"
+                                name="./tagFour"/>
                         </items>
                     </columns>
                 </items>

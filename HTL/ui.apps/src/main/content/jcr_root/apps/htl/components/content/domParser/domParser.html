@@ -1,7 +1,9 @@
 <div data-sly-test="${wcmmode.edit && !properties.address}">
   	Please specify the url
-</div>   
-
+</div>
+${properties.link}
+${properties.imp}
+${properties.img}
 Results: 
 <div data-sly-test="${properties.link=='true'}" data-sly-use.paths="org.redquark.aem.htl.core.models.DOMParserModel">
 <b>Here are the Links</b>

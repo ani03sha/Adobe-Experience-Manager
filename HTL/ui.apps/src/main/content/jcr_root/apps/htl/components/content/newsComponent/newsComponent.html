@@ -1,0 +1,53 @@
+<sly
+	data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientLib.js @ categories='newsComponent'}"
+	data-sly-unwrap />
+
+<div style="margin: 0 440px"
+	data-sly-test="${wcmmode.edit || wcmmode.design}">
+	<i>Please author keywords for news component</i>
+</div>
+<div class="col-md-12 col-md-offset-3">
+	<div data-sly-test="${properties.text}">
+		<h1>
+			<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;
+			${properties.header}
+		</h1>
+	</div>
+</div>
+
+<div id="news-tags" style="display: none">
+	${properties.tagOne}|${properties.tagTwo}|${properties.tagThree}|${properties.tagFour}
+</div>
+
+<div data-sly-test="${properties.tagOne}">
+	<div class="row" style="border: 2px grey">
+		<div class="col-md-3 col-md-offset-4">
+			<!-- Nav tabs -->
+			<ul class="nav nav-justified" role="tablist">
+				<li role="presentation" class="active"><a
+					href="#${properties.tagOne}" aria-controls="${properties.tagOne}"
+					role="tab" data-toggle="tab"><span data-toggle="tooltip"
+						data-placement="top" title="${properties.tagOne}"
+						class="glyphicon glyphicon-star" aria-hidden="true"></span></a></li>
+				<li role="presentation"><a href="#${properties.tagTwo}"
+					aria-controls="${properties.tagTwo}" role="tab" data-toggle="tab"><span
+						data-toggle="tooltip" data-placement="top"
+						title="${properties.tagTwo}" class="glyphicon glyphicon-globe"
+						aria-hidden="true"></span></a></li>
+				<li role="presentation"><a href="#${properties.tagThree}"
+					" aria-controls="${properties.tagThree}" role="tab"
+					data-toggle="tab"><span data-toggle="tooltip"
+						data-placement="top" title="${properties.tagThree}"
+						class="glyphicon glyphicon-king" aria-hidden="true"></span></a></li>
+				<li role="presentation"><a href="#${properties.tagFour}"
+					aria-controls="${properties.tagFour}" role="tab" data-toggle="tab"><span
+						data-toggle="tooltip" data-placement="top"
+						title="${properties.tagFour}"
+						class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span></a></li>
+			</ul>
+			<!-- Tab panes -->
+			<div class="tab-content" id="news-data"></div>
+		</div>
+	</div>
+</div>
