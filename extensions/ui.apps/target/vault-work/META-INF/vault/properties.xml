@@ -5,7 +5,7 @@
 <entry key="createdBy">Admin</entry>
 <entry key="name">extensions.ui.apps</entry>
 <entry key="acHandling">merge_preserve</entry>
-<entry key="created">2019-06-28T10:00:47.872+0530</entry>
+<entry key="created">2019-08-11T03:17:59.696+0530</entry>
 <entry key="groupId">org.redquark.aem</entry>
 <entry key="version">0.0.1-SNAPSHOT</entry>
 <entry key="requiresRoot">false</entry>

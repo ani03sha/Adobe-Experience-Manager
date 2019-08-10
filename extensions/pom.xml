@@ -454,8 +454,5 @@
     <modules>
         <module>core</module>
         <module>ui.apps</module>
-        
-        <module>dispatcher</module>
-        
     </modules>
 </project>
