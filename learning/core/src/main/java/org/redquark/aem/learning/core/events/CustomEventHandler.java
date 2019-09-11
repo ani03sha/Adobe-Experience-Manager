@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory;
 				EventConstants.EVENT_FILTER + "=(&" + "(path=/content/we-retail/us/en/*/jcr:content) (|("
 						+ SlingConstants.PROPERTY_CHANGED_ATTRIBUTES + "=*jcr:title) " + "("
 						+ ResourceChangeListener.CHANGES + "=*jcr:title)))" })
-public class CusutomEventHandler implements EventHandler {
+public class CustomEventHandler implements EventHandler {
 	
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
 
