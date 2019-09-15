@@ -9,6 +9,8 @@ import javax.inject.Named;
 
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
+import org.apache.sling.models.annotations.Exporter;
+import org.apache.sling.models.annotations.ExporterOption;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Via;
 
@@ -18,7 +20,10 @@ import com.day.cq.wcm.api.Page;
  * @author Anirudh Sharma
  *
  */
-@Model(adaptables = { SlingHttpServletRequest.class, Resource.class })
+@Model(adaptables = { SlingHttpServletRequest.class, Resource.class }, resourceType = {
+		"component-development/components/content/breadcrumb" })
+@Exporter(name = "jackson", extensions = "json", options = {
+		@ExporterOption(name = "SerializationFeature.WRITE_DATES_AS_TIMESTAMPS", value = "true") })
 public class BreadcrumbModel {
 
 	@Inject
