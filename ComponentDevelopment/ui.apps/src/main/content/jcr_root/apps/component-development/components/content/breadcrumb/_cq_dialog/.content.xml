@@ -36,7 +36,7 @@
                                                 min="0"
                                                 name="./level"
                                                 step="1"
-                                                value="${not empty cqDesign.level ? cqDesign.level : 2}"/>
+                                                value="${not empty cqDesign.level ? cqDesign.level : 1}"/>
                                         </items>
                                     </column>
                                 </items>

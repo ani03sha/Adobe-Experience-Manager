@@ -1,19 +1,16 @@
-<div
+<sly
+	data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.css @ categories='component-development.breadcrumb'}" />
+
+<sly
 	data-sly-use.breadcrumb="${'org.redquark.aem.componentdevelopment.core.Breadcrumb'}">
-	<!--/* Breadcrumb Component */-->
-	<div class="breadcrumb">
-		<div class="breadcrumb_nav_bar clearfix"
-			data-sly-test="${breadcrumb.navigationList}"
-			data-sly-list.element="${breadcrumb.navigationList}">
-				<p data-sly-test="${!elementList.last}">
-					<a href="${element.path}.html">
-						${element.title || element.navigationTitle || element.name}
-					</a>
-				</p>
-				<p data-sly-test="${elementList.last}">
-					${element.title || element.navigationTitle || element.name}
-				</p>
-			</div>
-	</div>
-	<!--/* Breadcrumb Component */-->
-</div>
+<!--/* Breadcrumb Component */-->
+<ol class="breadcrumb" data-sly-test="${breadcrumb.navigationList}"
+	data-sly-list.element="${breadcrumb.navigationList}">
+	<li data-sly-test="${!elementList.last}"><a
+		href="${element.path}.html"> ${element.title ||
+			element.navigationTitle || element.name} </a></li>
+	<li data-sly-test="${elementList.last}"><a> ${element.title ||
+			element.navigationTitle || element.name} </a></li>
+</ol>
+<!--/* Breadcrumb Component */--> </sly>
