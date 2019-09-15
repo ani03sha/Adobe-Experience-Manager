@@ -1,0 +1,19 @@
+<div
+	data-sly-use.breadcrumb="${'org.redquark.aem.componentdevelopment.core.Breadcrumb'}">
+	<!--/* Breadcrumb Component */-->
+	<div class="breadcrumb">
+		<div class="breadcrumb_nav_bar clearfix"
+			data-sly-test="${breadcrumb.navigationList}"
+			data-sly-list.element="${breadcrumb.navigationList}">
+				<p data-sly-test="${!elementList.last}">
+					<a href="${element.path}.html">
+						${element.title || element.navigationTitle || element.name}
+					</a>
+				</p>
+				<p data-sly-test="${elementList.last}">
+					${element.title || element.navigationTitle || element.name}
+				</p>
+			</div>
+	</div>
+	<!--/* Breadcrumb Component */-->
+</div>
