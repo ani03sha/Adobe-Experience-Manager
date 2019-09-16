@@ -1,0 +1,28 @@
+<sly
+	data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.css @ categories='component-development.accordion'}" />
+
+<sly
+	data-sly-use.multi="${'org.redquark.aem.componentdevelopment.core.models.AccordionModel'}">
+<div data-sly-list.accordions="${multi.accordions.listChildren}">
+	<button class="collapsible">${accordions.title}</button>
+	<div class="content">
+		<p>${accordions.body}</p>
+	</div>
+</div>
+
+<script>
+	var col = document.getElementsByClassName("collapsible");
+
+	for (var i = 0; i < col.length; i++) {
+		col[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight) {
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+			}
+		});
+	}
+</script>
