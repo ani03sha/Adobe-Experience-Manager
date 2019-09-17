@@ -1,0 +1,29 @@
+<sly
+	data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.css @ categories='component-development.carousel'}" />
+
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}">
+<h2>Carousel</h2>
+</sly>
+
+<div class="carousel">
+	<div class="carousel-inner">
+		<sly
+			data-sly-use.multi="${'org.redquark.aem.componentdevelopment.core.models.CarouselModel'}" />
+		<div data-sly-list.carousels="${multi.carousels.listChildren}">
+			<input class="carousel-open" type="radio"
+				id="carousel-${carouselsList.count}" name="carousel"
+				aria-hidden="true" hidden=""
+				checked="${carouselsList.count == 1 ? 'checked' : ''}">
+			<div class="carousel-item">
+				<img src="${carousels.image @ context ='html'}">
+			</div>
+		</div>
+		<ol class="carousel-indicators">
+			<div data-sly-list.carousels="${multi.carousels.listChildren}">
+				<li><label for="carousel-${carouselsList.count}"
+					class="carousel-bullet">•</label></li>
+			</div>
+		</ol>
+	</div>
+</div>
