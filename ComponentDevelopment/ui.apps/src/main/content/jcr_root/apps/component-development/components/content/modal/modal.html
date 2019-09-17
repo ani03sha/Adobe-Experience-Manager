@@ -1,0 +1,28 @@
+<sly
+	data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.all @ categories='component-development.modal'}" />
+
+<div class="container">
+	<p>
+		<a href="#" class="btn btn-big openmodale">${properties.btnText ?
+			properties.btnText : 'Enter some text'}</a>
+	</p>
+	<!-- Modal -->
+	<div class="modale" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-header">
+				<h2>${properties.modalHeading ? properties.modalHeading :
+					'Enter some text'}</h2>
+				<a href="#" class="btn-close closemodale" aria-hidden="true">&times;</a>
+			</div>
+			<div class="modal-body">
+				<p>${properties.modalBody @ context='html'}</p>
+				<div class="modal-footer">
+					<a href="#" class="btn closemodale" id="btn_ingresar">${properties.modalButtonText
+						? properties.modalButtonText : 'Enter some text' }</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Modal -->
+</div>
