@@ -1,0 +1,28 @@
+<sly
+	data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.all @ categories='component-development.tab'}" />
+
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}">
+<h2>Tab</h2>
+</sly>
+
+
+<div class="container">
+	<sly data-sly-use.multi="${'org.redquark.aem.componentdevelopment.core.models.GenericComponentModel'}">
+	<ul class="tabs">
+		<div data-sly-list.currentResource="${multi.genericResource.listChildren}">
+			<li class="tab-link ${currentResourceList.count == 1 ? 'current' : '' @ context='styleString'}"
+				data-tab="tab-${currentResourceList.count}">
+					${currentResource.title}
+			</li>
+		</div>
+	</ul>
+	</sly>
+	<div data-sly-list.currentResource="${multi.genericResource.listChildren}">
+		<div id="tab-${currentResourceList.count}" 
+			 class="tab-content ${currentResourceList.count == 1 ? 'current' : '' @ context='styleString'}">
+				${currentResource.body @ context='html'}
+		</div>
+	</div>
+</div>
+<!-- container -->
