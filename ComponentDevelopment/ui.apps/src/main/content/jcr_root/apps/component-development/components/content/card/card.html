@@ -1,0 +1,27 @@
+<sly
+	data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+	data-sly-call="${clientlib.css @ categories='component-development.card'}" />
+
+<sly data-sly-test="${wcmmode.edit || wcmmode.design}">
+<h2>Cards</h2>
+</sly>
+
+<sly data-sly-use.multi="${'org.redquark.aem.componentdevelopment.core.models.GenericComponentModel'}" />
+<main class="wrapper">
+  <section class="card" id="card">
+    <ul>
+    <sly data-sly-list.cards="${multi.genericResource.listChildren}">
+      <li>
+        <figure>
+          <img src="${cards.cardImage}" alt="${cards.cardTitle}">
+          <figcaption><h3>${cards.cardTitle}</h3></figcaption>
+        </figure>
+        <p>
+          ${cards.teaserText}
+        </p>
+        <a href="${cards.cardLink}" target="_blank">${cards.cardLinkText}</a>
+      </li>
+      </sly>
+    </ul>
+  </section>
+</main>
