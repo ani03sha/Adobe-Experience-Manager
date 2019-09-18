@@ -7,8 +7,8 @@
 </sly>
 
 <sly
-	data-sly-use.multi="${'org.redquark.aem.componentdevelopment.core.models.AccordionModel'}">
-	<div data-sly-list.accordions="${multi.accordions.listChildren}">
+	data-sly-use.multi="${'org.redquark.aem.componentdevelopment.core.models.GenericComponentModel'}">
+	<div data-sly-list.accordions="${multi.genericResource.listChildren}">
 		<button class="collapsible">${accordions.title}</button>
 		<div class="content">${accordions.body @ context='html'}</div>
 	</div>
