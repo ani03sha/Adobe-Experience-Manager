@@ -1,0 +1,356 @@
+input,
+button,
+textarea {
+    display: block;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+body,
+button {
+    font-family: 'Open Sans Condensed', Helvetica, sans-serif;
+}
+
+#app-cover {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 440px;
+    margin: -127.5px auto 0 auto;
+    perspective: 700px;
+    transform: scale(1);
+    transition: 0.8s ease all;
+}
+
+#app-cover.hide {
+    transform: scale(0);
+}
+
+#app {
+    width: 440px;
+    height: 255px;
+    transition: 1s ease transform;
+    transform-style: preserve-3d;
+    transform-origin: center left;
+}
+
+#app.flipped {
+    transform: translateX(100%) rotateY(180deg);
+}
+
+.layer {
+    position: absolute;
+    width: 380px;
+    height: 165px;
+    padding: 40px 30px 50px 30px;
+    background-color: #222;
+    border-radius: 4px;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+#layer1 {
+    background: linear-gradient(130deg, #03A9F4, #3F51B5);
+    box-shadow: 0 20px 70px -20px #3d55b8;
+    z-index: 1;
+}
+
+#layer2 {
+    background: linear-gradient(130deg, #7cdc0c, green);
+    box-shadow: 0 20px 70px -20px #61b83d;
+}
+
+#layer3 {
+    background: linear-gradient(130deg, #ffa162, #cc5200);
+    box-shadow: 0 20px 70px -20px #b8873d;
+}
+
+.heading {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.back-button {
+    position: absolute;
+    bottom: 49px;
+    left: 22px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#layer2 .input-box-cover {
+    border-color: #40b006;
+}
+
+.input-box-cover input,
+.input-box-cover textarea {
+    color: #fff;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#layer2 .input-box-cover input::placeholder {
+    color: green;
+}
+
+.input-box-cover button {
+    position: absolute;
+    right: 30px;
+    bottom: 45px;
+    font-size: 18px;
+    line-height: 1;
+    padding: 9px 16px 11px 16px;
+    background-color: #fff;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#layer2 .input-box-cover button {
+    color: green;
+}
+
+#layer2 .input-box-cover button:active {
+    box-shadow: 0 0 0 3px green, 0 0 0 5px #fff;
+}
+
+.working {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.working:before {
+    content: '';
+    position: absolute;
+    top: -130px;
+    bottom: -130px;
+    left: -470px;
+    width: 440px;
+    border-radius: 100%;
+    transition: 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.14) all;
+    z-index: 2;
+}
+
+.working.active:before {
+    left: -220px;
+}
+
+.working.done:before {
+    width: 720px;
+}
+
+#layer2 .working:before {
+    background-color: #01b901;
+    background: linear-gradient(130deg, #7cdc0c, #008000);
+    box-shadow: 10px 0 20px -8px #b3b3b3;
+}
+
+#layer2 .working:before,
+#layer3 .working:before {
+    box-shadow: 10px 0 20px -8px #b3b3b3;
+}
+
+.working:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.95;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.blink {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    color: #fff;
+    font-size: 23px;
+    padding: 10px;
+    margin-top: -26px;
+    margin-left: -100px;
+    opacity: 1;
+    transition: 0.8s cubic-bezier(0, 0.94, 0.51, 0.96) all, 0.4s ease opacity;
+    animation: blink 1s ease 0.5s infinite;
+    z-index: 3;
+}
+
+.working.active .blink {
+    left: 50%;
+}
+
+.blink.hide {
+    opacity: 0;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.working.done span {
+    text-align: center;
+    width: 102px;
+    margin-left: -61px;
+    animation: unset;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+}
+
+.working.done .close-button {
+    display: block;
+}
+
+.svg-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #fff;
+}
+
+.svg-icon circle {
+    stroke: #fff;
+    stroke-width: 1;
+}
+
+#layer2,
+#layer3 {
+    padding: 45px 30px;
+    display: none;
+    z-index: 2;
+}
+
+#layer2.active,
+#layer3.active {
+    display: block;
+    transform: rotateY(180deg);
+}
+
+#layer3 .input-box-cover textarea {
+    height: 42px;
+    min-height: 42px;
+    max-height: 42px;
+    overflow-y: auto;
+}
+
+#layer3 .input-box-cover textarea::placeholder {
+    color: #cc5200;
+}
+
+#layer3 .input-box-cover button {
+    color: #cc5200;
+}
+
+#layer3 .input-box-cover button:active {
+    box-shadow: 0 0 0 3px #cc5200, 0 0 0 5px #fff;
+}
+
+#layer3 .working:before {
+    background-color: #e2742a;
+    background: linear-gradient(130deg, #ffa162, #cc5200);
+}
+
+#front-message {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    height: 82px;
+    margin-bottom: 35px;
+}
+
+#buttons-cover:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.action-button {
+    width: 50%;
+}
+
+.action {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.action:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.action span {
+    position: relative;
+    z-index: 1;
+}
+
+#yes-button {
+    float: left;
+    text-align: right;
+}
+
+#no-button {
+    float: right;
+    text-align: left;
+}
+
+#yes-button .action {
+    margin-right: 15px;
+    background: linear-gradient(120deg, #9eff2e, #75b300);
+}
+
+#no-button .action {
+    margin-left: 15px;
+    background: linear-gradient(120deg, #ffa162, #cc5200);
+}
