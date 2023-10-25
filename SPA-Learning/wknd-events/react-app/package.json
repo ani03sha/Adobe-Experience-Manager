@@ -27,7 +27,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "aem-clientlib-generator": "^1.4.3",
+    "aem-clientlib-generator": "^1.8.0",
     "ajv": "^6.10.2",
     "clone": "^2.1.2",
     "typescript": "^3.5.3"
